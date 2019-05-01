@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sim_1/new/c1.sv,1555780639,systemVerilog,,,,clk1,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sim_1/new/popo.sv,1555794445,systemVerilog,,,,popo,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/BCDtoS.sv,1555789414,systemVerilog,,C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/Counter.sv,,BCDtoS,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/Counter.sv,1555791236,systemVerilog,,C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/FibR.sv,,Counter,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/FibR.sv,1556130619,systemVerilog,,C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sim_1/new/popo.sv,,FibR,,,,,,,,
+C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.srcs/sources_1/new/Proto.sv,1555793484,systemVerilog,,,,Proto,,,,,,,,
