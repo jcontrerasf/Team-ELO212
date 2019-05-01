@@ -2,6 +2,7 @@
 
 module BCDtoS(
     input logic [3:0] BCD,
+    output logic anode,
     output logic [6:0] sevenseg
     );
     always_comb begin
@@ -16,14 +17,14 @@ module BCDtoS(
             4'd7:   sevenseg = ~7'b1110000;
             4'd8:   sevenseg = ~7'b1111111;
             4'd9:   sevenseg = ~7'b1111011;
-            4'd10:   sevenseg = ~7'b1111011;
-            4'd11:   sevenseg = ~7'b1111011;
-            4'd12:   sevenseg = ~7'b1111011;
-            4'd13:   sevenseg = ~7'b1111011;
-            4'd14:   sevenseg = ~7'b1111011;
-            4'd9:   sevenseg = ~7'b1111011;
-            
+            4'd10:   sevenseg = ~7'b1110111;
+            4'd11:   sevenseg = ~7'b0011111;
+            4'd12:   sevenseg = ~7'b1001110;
+            4'd13:   sevenseg = ~7'b0111101;
+            4'd14:   sevenseg = ~7'b1001111;
+            4'd15:   sevenseg = ~7'b1111011;
             default: sevenseg = ~7'b0000000;
         endcase
+    anode = 0;   
     end
 endmodule
