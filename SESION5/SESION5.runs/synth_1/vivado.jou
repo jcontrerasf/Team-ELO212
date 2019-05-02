@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr 24 17:29:27 2019
-# Process ID: 4788
-# Current directory: C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.runs/synth_1
+# Start of session at: Wed May  1 18:46:00 2019
+# Process ID: 16344
+# Current directory: C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.runs/synth_1
 # Command line: vivado.exe -log Proto.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Proto.tcl
-# Log file: C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.runs/synth_1/Proto.vds
-# Journal file: C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.runs/synth_1\vivado.jou
+# Log file: C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.runs/synth_1/Proto.vds
+# Journal file: C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Proto.tcl -notrace

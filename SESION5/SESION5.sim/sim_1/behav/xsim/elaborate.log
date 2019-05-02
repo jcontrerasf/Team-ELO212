@@ -1,15 +1,8 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9d299d0abbe547d9a96e3de2aabf40fd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot popo_behav xil_defaultlib.popo xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 47c594f95b36406ab45ef3675efd38f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.BCDtoS
-Compiling module xil_defaultlib.Counter
-Compiling module xil_defaultlib.FibR
-Compiling module xil_defaultlib.popo
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot popo_behav
+ERROR: [VRFC 10-3818] variable 'swi' is driven by invalid combination of procedural drivers [C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.srcs/sim_1/new/popo.sv:24]
+WARNING: [VRFC 10-2921] 'swi' driven by this always_ff block should not be driven by any other process [C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.srcs/sim_1/new/popo.sv:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

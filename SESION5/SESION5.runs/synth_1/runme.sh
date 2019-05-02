@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ThePhonkey/Desktop/ELO211/project_primer/project_primer.runs/synth_1'
+HD_PWD='C:/Users/ThePhonkey/Documents/GitHub/Team-ELO212/SESION5/SESION5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

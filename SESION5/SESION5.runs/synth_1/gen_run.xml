@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556141365">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556750758">
   <File Type="PA-TCL" Name="Proto.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Proto_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Proto_reports.tcl"/>
   <File Type="RDS-RDS" Name="Proto.vds"/>
   <File Type="RDS-UTIL" Name="Proto_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Proto_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Proto.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Proto_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Proto_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/BCDtoS.sv">
@@ -17,8 +20,18 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Proto.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_primer/project_primer.srcs/sources_1/new/Proto.sv"/>
+        <Attr Name="ImportTime" Val="1556141186"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Counter.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../project_primer/project_primer.srcs/sources_1/new/Counter.sv"/>
         <Attr Name="ImportTime" Val="1555791236"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -28,17 +41,9 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/FibR.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../project_primer/project_primer.srcs/sources_1/new/FibR.sv"/>
         <Attr Name="ImportTime" Val="1556130619"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Proto.sv">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project_primer/project_primer.srcs/sources_1/new/Proto.sv"/>
-        <Attr Name="ImportTime" Val="1556141186"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,14 +67,6 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/JulioContreiras.xdc">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../project_primer/project_primer.srcs/constrs_1/new/JulioContreiras.xdc"/>
-        <Attr Name="ImportTime" Val="1556141016"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

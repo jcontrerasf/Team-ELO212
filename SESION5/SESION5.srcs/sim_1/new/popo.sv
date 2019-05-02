@@ -20,20 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module popo();
+module sim();
+    logic [3:0] swi;
+    logic [6:0] ca;
+    
     logic clk, reset;
-    logic DP;
-    logic CA,CB,CC,CD,CE,CF,CG;
-     
-     initial begin   
-      clk=0;
-      reset=1;
-      #10 reset=0;
-      end
-    always #5 clk=~clk;  
-    logic [3:0] counterout;//conecta el contador con el detector de fibinarios y BCDtoS
-    BCDtoS fa(.BCD(counterout),.sevenseg({CA,CB,CC,CD,CE,CF,CG}));
-    Counter fb(.clk(clk),.reset(reset),.count(counterout));
-    FibR fc(.BCD(counterout),.fib(DP));
+    initial begin
+        swi = 4'b0000;
+        clk = 0;
+        reset = 1;
+        #10
+        reset = 0;
+    end
+    
+    always #1 clk = ~clk;
+    always_ff @(posedge clk) begin
+        swi <= swi + 4'b0001;
+        end
+   BCDtoS fa(.BCD(swi),.sevenseg(ca));     
     
 endmodule

@@ -2,7 +2,6 @@
 
 module BCDtoS(
     input logic [3:0] BCD,
-    output logic anode,
     output logic [6:0] sevenseg
     );
     always_comb begin
@@ -25,6 +24,5 @@ module BCDtoS(
             4'd15:   sevenseg = ~7'b1111011;
             default: sevenseg = ~7'b0000000;
         endcase
-    anode = 0;   
     end
 endmodule
