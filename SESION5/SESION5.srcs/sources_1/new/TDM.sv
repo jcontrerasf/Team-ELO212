@@ -9,7 +9,8 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: Este modulo recibe 8 digitos de 4 bits cada uno y en cada canto de reloj
+//deja pasar solo uno de estos y a la vez activa solo un anodo.
 // 
 // Dependencies: 
 // 
