@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module TDM
+module TDM2
 #(parameter digitos = 8)
     (input logic clk,reset,
     input logic [3:0] d1,d2,d3,d4,d5,d6,d7,d8,
