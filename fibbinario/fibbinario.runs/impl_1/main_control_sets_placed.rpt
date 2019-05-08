@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed May  8 04:43:44 2019
+| Date         : Wed May  8 12:36:21 2019
 | Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -46,8 +46,8 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              31 |            9 |
+| No           | No                    | Yes                    |               4 |            1 |
+| No           | Yes                   | No                     |              27 |            5 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -60,8 +60,8 @@ Table of Contents
 +----------------------+---------------+------------------+------------------+----------------+
 |     Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------+---------------+------------------+------------------+----------------+
-|  div/CLK             |               | div/SR[0]        |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG |               | div/SR[0]        |                7 |             27 |
+|  div/CLK             |               | BTNC_IBUF        |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG |               | div/p_0_in       |                5 |             27 |
 +----------------------+---------------+------------------+------------------+----------------+
 
 

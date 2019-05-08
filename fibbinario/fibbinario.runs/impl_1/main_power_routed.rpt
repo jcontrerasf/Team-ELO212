@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed May  8 04:44:29 2019
+| Date             : Wed May  8 12:37:06 2019
 | Host             : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -58,8 +58,8 @@ Table of Contents
 |   Register     |    <0.001 |       31 |    126800 |            0.02 |
 |   CARRY4       |    <0.001 |        7 |     15850 |            0.04 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |       79 |       --- |             --- |
-| I/O            |     0.020 |       18 |       210 |            8.57 |
+| Signals        |    <0.001 |       80 |       --- |             --- |
+| I/O            |     0.020 |       19 |       210 |            9.05 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.119 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

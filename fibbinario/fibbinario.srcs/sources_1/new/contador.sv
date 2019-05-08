@@ -25,8 +25,8 @@ module contador(
     output logic [3:0] count
     );
     
-    always_ff @(posedge clk) begin
-        if (reset == 1'b0)
+    always_ff @(posedge clk or posedge reset) begin
+        if (reset == 'b1)
             count <= 4'b0;
         else
             count <= count+1;
