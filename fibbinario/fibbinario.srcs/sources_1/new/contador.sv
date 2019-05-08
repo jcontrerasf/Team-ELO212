@@ -26,7 +26,7 @@ module contador(
     );
     
     always_ff @(posedge clk) begin
-        if (reset)
+        if (reset == 1'b0)
             count <= 4'b0;
         else
             count <= count+1;
