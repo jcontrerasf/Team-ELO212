@@ -34,6 +34,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/julio/Desktop/Universidad/TeamELO212/btn-count/btn-count.srcs/sources_1/new/TDM.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/btn-count/btn-count.srcs/sources_1/new/contador.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/btn-count/btn-count.srcs/sources_1/new/div.sv
+  C:/Users/julio/Desktop/Universidad/TeamELO212/btn-count/btn-count.srcs/sources_1/new/double-dabble.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/btn-count/btn-count.srcs/sources_1/new/main.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed May  8 21:08:07 2019
+| Date         : Wed May  8 23:08:24 2019
 | Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     5 |
-| Unused register locations in slices containing registers |    17 |
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    42 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,8 +35,11 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            1 |
-|      4 |            1 |
-|      8 |            2 |
+|      4 |            5 |
+|      5 |            1 |
+|      6 |            1 |
+|      8 |            1 |
+|     12 |            1 |
 |    16+ |            1 |
 +--------+--------------+
 
@@ -47,26 +50,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            1 |
+| No           | No                    | No                     |              10 |            3 |
 | No           | No                    | Yes                    |               1 |            1 |
 | No           | Yes                   | No                     |              22 |            7 |
-| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              24 |            5 |
 | Yes          | No                    | Yes                    |               8 |            3 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+-------------------------+--------------------------+------------------+----------------+
-|     Clock Signal     |      Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+----------------------+-------------------------+--------------------------+------------------+----------------+
-|  CLK100MHZ_IBUF_BUFG |                         | BTNC_IBUF                |                1 |              1 |
-|  uno/clk             |                         | multiplex/bcd[3]_i_1_n_0 |                1 |              4 |
-|  uno/clk             |                         |                          |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | unidad/count[7]_i_1_n_0 | BTNC_IBUF                |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG |                         | uno/counter[16]_i_1_n_0  |                6 |             18 |
-+----------------------+-------------------------+--------------------------+------------------+----------------+
++----------------------+-----------------------------------+------------------------------------+------------------+----------------+
+|     Clock Signal     |           Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------+-----------------------------------+------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG |                                   | BTNC_IBUF                          |                1 |              1 |
+|  uno/clk             |                                   | multiplex/contador[2]              |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG |                                   |                                    |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[7]_i_1_n_0  |                                    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[3]_i_1_n_0  |                                    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[11]_i_1_n_0 |                                    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/counter_next      | u32_to_bcd_inst/counter[5]_i_1_n_0 |                2 |              5 |
+|  uno/clk             |                                   |                                    |                1 |              6 |
+|  CLK100MHZ_IBUF_BUFG | unidad/count[7]_i_1_n_0           | BTNC_IBUF                          |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/bcd_next          |                                    |                2 |             12 |
+|  CLK100MHZ_IBUF_BUFG |                                   | uno/counter[16]_i_1_n_0            |                6 |             18 |
++----------------------+-----------------------------------+------------------------------------+------------------+----------------+
 
 
