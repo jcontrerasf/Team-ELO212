@@ -26,9 +26,8 @@ module FSM
 //	param2 = < value > )
 (
 	input 	logic clock, reset, invalido, siguiente, undo,
-	input 	logic [7:0] inp1, inp2,
-	output 	logic [15:0] outp1, outp2,
 	output logic [1:0] RG, //rojo verde
+	output logic [2:0] activar_reg, //activa el registro que corresponde {a,b,op}
 	output logic [7:0] usados);
 
  //Declarations:------------------------------
@@ -39,35 +38,57 @@ module FSM
  //Statements:--------------------------------
 
  //FSM state register:
- always_ff @(posedge clk, posedge rst)
-	if (rst) pr_state < = A;
-	else pr_state < = nx_state;
+always@(posedge clock or posedge reset)
+    	if(reset)
+    		state <= Wait_OP1;
+    	else
+    		state <= next_state;
 
  //FSM combinational logic:
  always_comb begin
+ 
+ RG = 2'b00; //led rgb apagado
+ usados = 8'b11110000;
+ activar_reg = 3'b000;
+ 
 	case (state)
 		Wait_OP1: begin
-            if(siguiente)
+            if(siguiente) begin
                next_state = Wait_OP2;
+               activar_reg = 3'b100;
+               end
 		end
  
 		Wait_OP2: begin
-		  if(siguiente)
+		  if(siguiente) begin
 	           next_state = Wait_Operation;
+	           activar_reg = 3'b010;
+	           end
 	      if(undo)
-	           next_state = Wait_OP1
+	           next_state = Wait_OP1;
 		end
  
 		Wait_Operation: begin
 			usados = 8'b00000000; //todos los displays apagados
-			RG = 2'b00; //led rgb apagado
+			if(siguiente) begin
+	           next_state = Show_Result;
+	           activar_reg = 3'b001;
+	           end
+	      if(undo)
+	           next_state = Wait_OP2;
 		end
+		
 		Show_Result: begin
 		  if(invalido)
 		      RG = 2'b10; //rojo verde
 		  else
-		      RG = 2'b01 //rojo verde
+		      RG = 2'b01; //rojo verde
+		  if(siguiente)
+		      next_state = Wait_OP1;
+		  if(undo)
+		      next_state = Wait_Operation;
 		end
+		
 	endcase
 end
  endmodule
