@@ -26,9 +26,11 @@ module FSM
 //	param2 = < value > )
 (
 	input 	logic clock, reset, invalido, siguiente, undo,
+	input logic [15:0] res_alu, switches,
 	output logic [1:0] RG, //rojo verde
 	output logic [2:0] activar_reg, //activa el registro que corresponde {a,b,op}
-	output logic [7:0] usados);
+	output logic [7:0] usados,
+	output logic [19:0] mostrar);
 
  //Declarations:------------------------------
 
@@ -50,9 +52,11 @@ always@(posedge clock or posedge reset)
  RG = 2'b00; //led rgb apagado
  usados = 8'b11110000;
  activar_reg = 3'b000;
+ mostrar = 20'b0;
  
 	case (state)
 		Wait_OP1: begin
+		    mostrar = switches;
             if(siguiente) begin
                next_state = Wait_OP2;
                activar_reg = 3'b100;
@@ -60,6 +64,7 @@ always@(posedge clock or posedge reset)
 		end
  
 		Wait_OP2: begin
+		  mostrar = switches;
 		  if(siguiente) begin
 	           next_state = Wait_Operation;
 	           activar_reg = 3'b010;
@@ -79,6 +84,7 @@ always@(posedge clock or posedge reset)
 		end
 		
 		Show_Result: begin
+		  mostrar = res_alu;
 		  if(invalido)
 		      RG = 2'b10; //rojo verde
 		  else
