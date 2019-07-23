@@ -24,7 +24,7 @@ module banco_de_registro
 #(parameter
  bits = 16 )
 (
-    input logic guardar, clock, reset,
+    input logic guardar, clock, reset, borrar, enable,
     input logic [bits-1:0] entrada,
     output logic [bits-1:0] salida
     );
@@ -36,12 +36,18 @@ module banco_de_registro
    next_state = state;
    salida = 'b0;
    
-     case (state)
+     if(enable) begin
+     
+        case (state)
         esperar: begin
             if(guardar) next_state = retener;
         end
-        retener: salida = entrada;
+        retener: begin
+            if(borrar) next_state = esperar;
+            else salida = entrada;
+        end
      endcase
+     end
    end
         
     always@(posedge clock or posedge reset)

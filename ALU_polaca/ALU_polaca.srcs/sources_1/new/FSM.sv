@@ -58,9 +58,9 @@ always@(posedge clock or posedge reset)
 	case (state)
 		Wait_OP1: begin
 		    mostrar = switches;
+		    activar_reg = 3'b100;
             if(siguiente) begin
                next_state = Wait_OP2;
-               activar_reg = 3'b100;
                end
             else if(undo)
 	           next_state = Wait_OP1;
@@ -68,9 +68,9 @@ always@(posedge clock or posedge reset)
  
 		Wait_OP2: begin
 		  mostrar = switches;
+		  activar_reg = 3'b010;
 		  if(siguiente) begin
 	           next_state = Wait_Operation;
-	           activar_reg = 3'b010;
 	           end
 	      else if(undo)
 	           next_state = Wait_OP1;
@@ -78,9 +78,9 @@ always@(posedge clock or posedge reset)
  
 		Wait_Operation: begin
 			usados = 8'b00000000; //todos los displays apagados
+			activar_reg = 3'b001;
 			if(siguiente) begin
 	           next_state = Show_Result;
-	           activar_reg = 3'b001;
 	           end
 	      else if(undo)
 	           next_state = Wait_OP2;
