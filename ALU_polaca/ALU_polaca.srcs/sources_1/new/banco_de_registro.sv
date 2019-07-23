@@ -24,41 +24,41 @@ module banco_de_registro
 #(parameter
  bits = 16 )
 (
-    input logic guardar, clock, reset, borrar, enable,
+    input logic guardar, clock, reset, enable, borrar,
     input logic [bits-1:0] entrada,
-    output logic [bits-1:0] guardar_salida
+    output logic [bits-1:0] salida
     );
     
-    enum logic {esperar,retener} state, next_state;
+//    enum logic {esperar,retener} state, next_state;
     
-    logic [15:0] salida;
+//    logic [15:0] salida;
     
-   always_comb begin
+//   always_comb begin
    
-   next_state = state;
-   salida = 'b0;
+//   next_state = state;
+//   salida = 'b0;
    
      
-        case (state)
-        esperar: begin
-            if(guardar & enable)
-                next_state = retener;
-                salida = entrada;
-        end
-        retener: begin
-            if(borrar & enable) next_state = esperar;
-        end
-     endcase
-   end
+//        case (state)
+//        esperar: begin
+//            if(guardar & enable)
+//                next_state = retener;
+//                salida = entrada;
+//        end
+//        retener: begin
+//            if(borrar & enable) next_state = esperar;
+//        end
+//     endcase
+//   end
         
     always@(posedge clock or posedge reset)
     	if(reset) begin
-    		state <= esperar;
-    		guardar_salida <= 'b0;
+//    		state <= esperar;
+    		salida <= 'b0;
     	end
-    	else begin
-    		state <= next_state;
-    		guardar_salida <= salida;
+    	else if(guardar & enable) begin
+//    		state <= next_state;
+    		salida <= entrada;
         end
     
 endmodule
