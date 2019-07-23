@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Jul 23 01:15:19 2019
+| Date             : Tue Jul 23 15:15:42 2019
 | Host             : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -52,13 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      357 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      176 |     63400 |            0.28 |
-|   Register     |    <0.001 |      107 |    126800 |            0.08 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      434 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      185 |     63400 |            0.29 |
 |   CARRY4       |    <0.001 |       14 |     15850 |            0.09 |
-|   Others       |     0.000 |       18 |       --- |             --- |
-| Signals        |    <0.001 |      298 |       --- |             --- |
+|   Register     |    <0.001 |      141 |    126800 |            0.11 |
+|   F7/F8 Muxes  |    <0.001 |       18 |     63400 |            0.03 |
+|   Others       |     0.000 |       19 |       --- |             --- |
+| Signals        |    <0.001 |      307 |       --- |             --- |
 | I/O            |    <0.001 |       38 |       210 |           18.10 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.100 |          |           |                 |

@@ -39,10 +39,10 @@ module dec_switcher
 	);
     
     always_comb begin
-        if(cambiar) begin
-            salida=dec;
-        end else begin
-            salida=hex;
-        end
+        case(cambiar)
+            1'b1: salida=dec;
+            1'b0: salida=hex;
+            default: salida=hex;
+        endcase
     end
 endmodule

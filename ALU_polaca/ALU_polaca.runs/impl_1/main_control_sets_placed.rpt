@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Jul 23 01:14:26 2019
+| Date         : Tue Jul 23 15:14:52 2019
 | Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    13 |
-| Unused register locations in slices containing registers |    45 |
+| Unused register locations in slices containing registers |    51 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,9 +34,10 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            8 |
+|      1 |            1 |
+|      4 |            7 |
 |      5 |            1 |
-|      8 |            1 |
+|     11 |            1 |
 |     12 |            1 |
 |    16+ |            2 |
 +--------+--------------+
@@ -48,34 +49,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              12 |            6 |
-| No           | No                    | Yes                    |               3 |            2 |
-| No           | Yes                   | No                     |              31 |            9 |
-| Yes          | No                    | No                     |              57 |           17 |
+| No           | No                    | No                     |              15 |            5 |
+| No           | No                    | Yes                    |              37 |           12 |
+| No           | Yes                   | No                     |              28 |           11 |
+| Yes          | No                    | No                     |              52 |           18 |
 | Yes          | No                    | Yes                    |               4 |            1 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+--------------------------------------------+-------------------------+------------------+----------------+
-|     Clock Signal     |                Enable Signal               |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
-+----------------------+--------------------------------------------+-------------------------+------------------+----------------+
-|  uno/clk             |                                            | maquina/contador_reg[2] |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG |                                            |                         |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[19]_i_1_n_0 |                         |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[15]_i_1_n_0 |                         |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[11]_i_1_n_0 |                         |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[3]_i_1_n_0  |                         |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[7]_i_1_n_0  |                         |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | btn_derecho/E[0]                           | uno/CPU_RESET           |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/counter_next      |                         |                3 |              5 |
-|  uno/clk             |                                            |                         |                5 |              8 |
-|  CLK100MHZ_IBUF_BUFG | CPU_RESET_IBUF                             |                         |                3 |             12 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/bcd_next          |                         |                5 |             20 |
-|  CLK100MHZ_IBUF_BUFG |                                            | uno/CPU_RESET           |               10 |             30 |
-+----------------------+--------------------------------------------+-------------------------+------------------+----------------+
++----------------------+--------------------------------------------+------------------------------------------------+------------------+----------------+
+|     Clock Signal     |                Enable Signal               |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------------------+------------------------------------------------+------------------+----------------+
+|  uno/clk             |                                            | multiplex/anodos[2]_i_1_n_0                    |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG |                                            |                                                |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | btn_derecho/E[0]                           | uno/CPU_RESET                                  |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[19]_i_1_n_0 |                                                |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[15]_i_1_n_0 |                                                |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[3]_i_1_n_0  |                                                |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[7]_i_1_n_0  |                                                |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[11]_i_1_n_0 |                                                |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/counter_next      | switcher/u32_to_bcd_inst/counter[5]_i_1__0_n_0 |                2 |              5 |
+|  uno/clk             |                                            |                                                |                3 |             11 |
+|  CLK100MHZ_IBUF_BUFG | CPU_RESET_IBUF                             |                                                |                3 |             12 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/bcd_next          |                                                |                8 |             20 |
+|  CLK100MHZ_IBUF_BUFG |                                            | uno/CPU_RESET                                  |               22 |             64 |
++----------------------+--------------------------------------------+------------------------------------------------+------------------+----------------+
 
 
