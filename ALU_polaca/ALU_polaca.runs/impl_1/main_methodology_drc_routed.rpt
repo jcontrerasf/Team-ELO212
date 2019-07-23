@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Jul 22 23:16:17 2019
+| Date         : Tue Jul 23 00:35:23 2019
 | Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
 | Design       : main
@@ -23,40 +23,39 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 38
+             Violations found: 34
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 12         |
 | TIMING-18 | Warning  | Missing input or output delay | 22         |
-| TIMING-20 | Warning  | Non-clocked latch             | 4          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 TIMING-17#1 Warning
 Non-clocked sequential cell  
-The clock pin multiplex/anodos_reg[3]/C is not reached by a timing clock
+The clock pin multiplex/anodos_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Warning
 Non-clocked sequential cell  
-The clock pin multiplex/anodos_reg[4]/C is not reached by a timing clock
+The clock pin multiplex/anodos_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Warning
 Non-clocked sequential cell  
-The clock pin multiplex/anodos_reg[5]/C is not reached by a timing clock
+The clock pin multiplex/anodos_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Warning
 Non-clocked sequential cell  
-The clock pin multiplex/anodos_reg[6]/C is not reached by a timing clock
+The clock pin multiplex/anodos_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Warning
 Non-clocked sequential cell  
-The clock pin multiplex/anodos_reg[7]/C is not reached by a timing clock
+The clock pin multiplex/anodos_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Warning
@@ -202,26 +201,6 @@ Related violations: <none>
 TIMING-18#22 Warning
 Missing input or output delay  
 An output delay is missing on LED16_R relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch switcher/salida_reg[16] cannot be properly analyzed as its control pin switcher/salida_reg[16]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch switcher/salida_reg[17] cannot be properly analyzed as its control pin switcher/salida_reg[17]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch switcher/salida_reg[18] cannot be properly analyzed as its control pin switcher/salida_reg[18]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch switcher/salida_reg[19] cannot be properly analyzed as its control pin switcher/salida_reg[19]/G is not reached by a timing clock
 Related violations: <none>
 
 

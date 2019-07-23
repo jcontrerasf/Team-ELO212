@@ -50,7 +50,7 @@ always@(posedge clock or posedge reset)
  always_comb begin
  
  RG = 2'b00; //led rgb apagado
- usados = 8'b11111000;
+ usados = 8'b00011111;
  activar_reg = 3'b000;
  mostrar = 20'b0;
  next_state = state;
@@ -62,7 +62,7 @@ always@(posedge clock or posedge reset)
                next_state = Wait_OP2;
                activar_reg = 3'b100;
                end
-            if(undo)
+            else if(undo)
 	           next_state = Wait_OP1;
 		end
  
@@ -72,7 +72,7 @@ always@(posedge clock or posedge reset)
 	           next_state = Wait_Operation;
 	           activar_reg = 3'b010;
 	           end
-	      if(undo)
+	      else if(undo)
 	           next_state = Wait_OP1;
 		end
  
@@ -82,7 +82,7 @@ always@(posedge clock or posedge reset)
 	           next_state = Show_Result;
 	           activar_reg = 3'b001;
 	           end
-	      if(undo)
+	      else if(undo)
 	           next_state = Wait_OP2;
 		end
 		
@@ -94,7 +94,7 @@ always@(posedge clock or posedge reset)
 		      RG = 2'b01; //rojo verde
 		  if(siguiente)
 		      next_state = Wait_OP1;
-		  if(undo)
+		  else if(undo)
 		      next_state = Wait_Operation;
 		end
 		

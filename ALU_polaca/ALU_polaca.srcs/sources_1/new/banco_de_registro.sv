@@ -29,19 +29,25 @@ module banco_de_registro
     output logic [bits-1:0] salida
     );
     
-    reg [bits-1:0] next_state;
+    enum logic {esperar,retener} state, next_state;
     
    always_comb begin
-   next_state = 'b0;
-     if(guardar) begin
-        next_state = entrada;
-    end
+   
+   next_state = state;
+   salida = 'b0;
+   
+     case (state)
+        esperar: begin
+            if(guardar) next_state = retener;
+        end
+        retener: salida = entrada;
+     endcase
    end
         
     always@(posedge clock or posedge reset)
     	if(reset)
-    		salida <= 1'b0;
+    		state <= esperar;
     	else
-    		salida <= next_state;
+    		state <= next_state;
     
 endmodule

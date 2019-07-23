@@ -23,7 +23,7 @@
 module dec_switcher
 #(parameter bits = 16 )
 (
-    input logic cambiar, clock,
+    input logic cambiar, clock, trigger,
     input logic [bits-1:0] hex,
     output logic [19:0] salida
     );
@@ -32,7 +32,7 @@ module dec_switcher
     
     unsigned_to_bcd u32_to_bcd_inst (
 		.clk(clock),
-		.trigger(cambiar),
+		.trigger(trigger),
 		.in(hex),
 		.idle(),
 		.bcd(dec)
@@ -42,7 +42,7 @@ module dec_switcher
         if(cambiar) begin
             salida=dec;
         end else begin
-            salida[15:0]=hex;
+            salida=hex;
         end
     end
 endmodule
