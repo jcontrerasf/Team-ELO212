@@ -32,6 +32,7 @@ module banco_de_registro
     reg [bits-1:0] next_state;
     
    always_comb begin
+   next_state = 'b0;
      if(guardar) begin
         next_state = entrada;
     end

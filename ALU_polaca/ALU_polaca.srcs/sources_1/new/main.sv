@@ -23,7 +23,7 @@
 module main(
     input logic CLK100MHZ, CPU_RESET, BTNC, BTND, BTNU,
     output logic [7:0] AN,
-    output logic [15:0] SW,
+    input logic [15:0] SW,
     output [6:0] seg,
     output logic LED16_G, LED16_R
 
@@ -36,6 +36,9 @@ module main(
     logic [7:0] uso;
     logic [31:0] dec;
     logic [2:0] registros;
+    logic [15:0] mostrar;
+    logic [15:0] a, b, resultado;
+    logic [1:0] op;
     
     assign nada = 4'b0000;
     
@@ -52,9 +55,10 @@ module main(
 	ALU alu(.A(a),.B(b),.botones(op),.salida(resultado),.invalido(inv));
 	debouncer btn_central(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNC),.PB_pressed_pulse(centro));
 	debouncer btn_derecho(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTND),.PB_pressed_pulse(der));
+	debouncer btn_up(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNU),.PB_pressed_pulse(up));
 	banco_de_registro bancoA(.guardar(registros[0]),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(a));
 	banco_de_registro bancoB(.guardar(registros[1]),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(b));
 	banco_de_registro #(.bits(2)) bancoOP(.guardar(registros[2]),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW[1:0]),.salida(op));
-	dec_switcher switcher(.cambiar(BTNU),.clock(CLK100MHZ),.hex(mostrar),.salida(dec));
+	dec_switcher switcher(.cambiar(up),.clock(CLK100MHZ),.hex(mostrar),.salida(dec));
     
 endmodule

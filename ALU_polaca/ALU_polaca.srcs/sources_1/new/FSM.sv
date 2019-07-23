@@ -30,7 +30,7 @@ module FSM
 	output logic [1:0] RG, //rojo verde
 	output logic [2:0] activar_reg, //activa el registro que corresponde {a,b,op}
 	output logic [7:0] usados,
-	output logic [19:0] mostrar);
+	output logic [15:0] mostrar);
 
  //Declarations:------------------------------
 
@@ -50,9 +50,10 @@ always@(posedge clock or posedge reset)
  always_comb begin
  
  RG = 2'b00; //led rgb apagado
- usados = 8'b11110000;
+ usados = 8'b11111000;
  activar_reg = 3'b000;
  mostrar = 20'b0;
+ next_state = state;
  
 	case (state)
 		Wait_OP1: begin
@@ -61,6 +62,8 @@ always@(posedge clock or posedge reset)
                next_state = Wait_OP2;
                activar_reg = 3'b100;
                end
+            if(undo)
+	           next_state = Wait_OP1;
 		end
  
 		Wait_OP2: begin
