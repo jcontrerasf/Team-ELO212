@@ -30,7 +30,7 @@ module banco_de_registro
     );
     
     
-    logic [15:0] intermedio;
+    logic [bits-1:0] intermedio;
     
    always_comb begin
    

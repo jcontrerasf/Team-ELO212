@@ -29,7 +29,7 @@ module main(
 
     );
     
-    logic reloj, inv;
+    logic reloj, inv, centro, abajo, up;
     logic [3:0] nada;
     logic [7:0] salida;
     logic [3:0] bcdout;
@@ -53,7 +53,7 @@ module main(
     BCD toseven(.bcd(bcdout),.segmentos(seg));
 	FSM maquina(.RG({LED16_R,LED16_G}),.usados(uso),.clock(CLK100MHZ),.reset(~CPU_RESET),.invalido(inv),.siguiente(centro),.undo(abajo),.activar_reg(registros),.res_alu(resultado),.switches(SW),.mostrar(mostrar));
 	ALU alu(.A(a),.B(b),.botones(op),.salida(resultado),.invalido(inv));
-	debouncer btn_central(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNC),.PB_pressed_pulse(centro)); //puede ser bueno cambiar pulse por status
+	debouncer btn_central(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNC),.PB_pressed_pulse(centro));
 	debouncer btn_derecho(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTND),.PB_pressed_pulse(abajo));
 	debouncer btn_up(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNU),.PB_pressed_status(up));
 	banco_de_registro bancoA(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(a),.enable(registros[0]));
