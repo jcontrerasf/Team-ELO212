@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jul 23 22:19:22 2019
-# Process ID: 11692
+# Start of session at: Wed Jul 24 17:05:16 2019
+# Process ID: 16548
 # Current directory: C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.runs/synth_1/main.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6500 
+INFO: Helper process launched with PID 9200 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 361.402 ; gain = 79.281
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 362.734 ; gain = 85.773
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/main.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/divider.sv:23]
@@ -28,6 +28,8 @@ INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/julio/Desktop/Universid
 	Parameter digitos bound to: 8 - type: integer 
 INFO: [Synth 8-226] default block is never used [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/TDM.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'TDM' (2#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/TDM.sv:40]
+WARNING: [Synth 8-689] width (16) of port connection 'd7' does not match port width (4) of module 'TDM' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/main.sv:52]
+WARNING: [Synth 8-689] width (16) of port connection 'd8' does not match port width (4) of module 'TDM' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/main.sv:52]
 INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/BCD.sv:23]
 INFO: [Synth 8-226] default block is never used [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/BCD.sv:29]
 INFO: [Synth 8-6155] done synthesizing module 'BCD' (3#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/BCD.sv:23]
@@ -64,7 +66,7 @@ INFO: [Synth 8-6155] done synthesizing module 'dec_switcher' (9#1) [C:/Users/jul
 WARNING: [Synth 8-689] width (32) of port connection 'salida' does not match port width (20) of module 'dec_switcher' [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/main.sv:62]
 INFO: [Synth 8-6155] done synthesizing module 'main' (10#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/sources_1/new/main.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.023 ; gain = 135.902
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 418.520 ; gain = 141.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -77,10 +79,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.023 ; gain = 135.902
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 418.520 ; gain = 141.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.023 ; gain = 135.902
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 418.520 ; gain = 141.559
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -91,30 +93,30 @@ Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_p
 Finished Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/constrs_1/new/constr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 770.578 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 770.578 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.809 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 769.809 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 770.578 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 770.578 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "clkout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM'
@@ -148,7 +150,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'unsigned_to_bcd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -295,7 +297,7 @@ INFO: [Synth 8-3886] merging instance 'multiplex/anodos_reg[5]' (FD) to 'multipl
 INFO: [Synth 8-3886] merging instance 'multiplex/anodos_reg[6]' (FD) to 'multiplex/anodos_reg[7]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\multiplex/anodos_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:50 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -307,13 +309,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 769.809 ; gain = 487.688
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:02 . Memory (MB): peak = 770.578 ; gain = 493.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 793.180 ; gain = 511.059
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:03 . Memory (MB): peak = 793.695 ; gain = 516.734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,7 +327,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:01:04 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -349,7 +351,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -362,7 +364,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,25 +376,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -410,63 +412,61 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    14|
-|3     |LUT1   |     3|
-|4     |LUT2   |    56|
-|5     |LUT3   |    34|
-|6     |LUT4   |    28|
-|7     |LUT5   |    21|
-|8     |LUT6   |    65|
-|9     |MUXF7  |    12|
-|10    |MUXF8  |     6|
-|11    |FDCE   |    37|
-|12    |FDPE   |     1|
-|13    |FDRE   |    99|
-|14    |FDSE   |     1|
-|15    |IBUF   |    21|
-|16    |OBUF   |    17|
+|3     |LUT1   |     2|
+|4     |LUT2   |    61|
+|5     |LUT3   |    10|
+|6     |LUT4   |    29|
+|7     |LUT5   |    35|
+|8     |LUT6   |    62|
+|9     |FDCE   |    37|
+|10    |FDPE   |     1|
+|11    |FDRE   |   100|
+|12    |IBUF   |    21|
+|13    |OBUF   |    17|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+--------------------+----------------------------------+------+
 |      |Instance            |Module                            |Cells |
 +------+--------------------+----------------------------------+------+
-|1     |top                 |                                  |   416|
-|2     |  alu               |ALU                               |     8|
-|3     |  bancoA            |banco_de_registro                 |    34|
+|1     |top                 |                                  |   390|
+|2     |  alu               |ALU                               |     4|
+|3     |  bancoA            |banco_de_registro                 |    38|
 |4     |  bancoB            |banco_de_registro_0               |    32|
 |5     |  bancoOP           |banco_de_registro__parameterized0 |    20|
-|6     |  btn_central       |debouncer                         |    13|
+|6     |  btn_central       |debouncer                         |    16|
 |7     |  btn_derecho       |debouncer_1                       |    14|
 |8     |  btn_up            |debouncer_2                       |    12|
-|9     |  maquina           |FSM                               |    73|
-|10    |  multiplex         |TDM                               |    21|
-|11    |  switcher          |dec_switcher                      |    98|
-|12    |    u32_to_bcd_inst |unsigned_to_bcd                   |    98|
+|9     |  maquina           |FSM                               |    37|
+|10    |  multiplex         |TDM                               |    30|
+|11    |  switcher          |dec_switcher                      |    96|
+|12    |    u32_to_bcd_inst |unsigned_to_bcd                   |    96|
 |13    |  toseven           |BCD                               |     7|
 |14    |  uno               |divider                           |    45|
 +------+--------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 796.473 ; gain = 519.512
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 795.832 ; gain = 161.926
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 795.832 ; gain = 513.711
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 796.473 ; gain = 167.453
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:01:06 . Memory (MB): peak = 796.473 ; gain = 519.512
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 795.832 ; gain = 513.711
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.832 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:16 . Memory (MB): peak = 796.473 ; gain = 519.512
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.473 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/julio/Desktop/Universidad/TeamELO212/ALU_polaca/ALU_polaca.runs/synth_1/main.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 796.473 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 22:20:05 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 17:07:09 2019...
