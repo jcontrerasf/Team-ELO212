@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Jul 23 16:23:20 2019
+| Date         : Tue Jul 23 19:24:13 2019
 | Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -69,16 +69,16 @@ Table of Contents
 |  CLK100MHZ_IBUF_BUFG | maquina/FSM_onehot_state_reg[0]_0[0]       | uno/CPU_RESET                                  |                1 |              2 |
 |  CLK100MHZ_IBUF_BUFG |                                            |                                                |                1 |              4 |
 |  CLK100MHZ_IBUF_BUFG | btn_derecho/E[0]                           | uno/CPU_RESET                                  |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[15]_i_1_n_0 |                                                |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[19]_i_1_n_0 |                                                |                2 |              4 |
 |  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[3]_i_1_n_0  |                                                |                1 |              4 |
 |  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[11]_i_1_n_0 |                                                |                1 |              4 |
 |  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[7]_i_1_n_0  |                                                |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[15]_i_1_n_0 |                                                |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/shift[19]_i_1_n_0 |                                                |                2 |              4 |
 |  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/counter_next      | switcher/u32_to_bcd_inst/counter[5]_i_1__0_n_0 |                1 |              5 |
 |  uno/clk             |                                            |                                                |                4 |             11 |
 |  CLK100MHZ_IBUF_BUFG | CPU_RESET_IBUF                             |                                                |                3 |             12 |
-|  CLK100MHZ_IBUF_BUFG | maquina/D[0]                               | uno/CPU_RESET                                  |                5 |             16 |
 |  CLK100MHZ_IBUF_BUFG | maquina/E[0]                               | uno/CPU_RESET                                  |                6 |             16 |
+|  CLK100MHZ_IBUF_BUFG | maquina/D[0]                               | uno/CPU_RESET                                  |                5 |             16 |
 |  CLK100MHZ_IBUF_BUFG | switcher/u32_to_bcd_inst/bcd_next          |                                                |               11 |             20 |
 |  CLK100MHZ_IBUF_BUFG |                                            | uno/CPU_RESET                                  |               10 |             27 |
 +----------------------+--------------------------------------------+------------------------------------------------+------------------+----------------+

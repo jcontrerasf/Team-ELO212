@@ -56,9 +56,9 @@ module main(
 	debouncer btn_central(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNC),.PB_pressed_pulse(centro)); //puede ser bueno cambiar pulse por status
 	debouncer btn_derecho(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTND),.PB_pressed_pulse(abajo));
 	debouncer btn_up(.clk(CLK100MHZ),.rst(~CPU_RESET),.PB(BTNU),.PB_pressed_status(up));
-	banco_de_registro bancoA(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(a),.enable(registros[0]),.borrar(abajo));
-	banco_de_registro bancoB(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(b),.enable(registros[1]),.borrar(abajo));
-	banco_de_registro #(.bits(2)) bancoOP(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW[1:0]),.salida(op),.enable(registros[2]),.borrar(abajo));
+	banco_de_registro bancoA(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(a),.enable(registros[0]));
+	banco_de_registro bancoB(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW),.salida(b),.enable(registros[1]));
+	banco_de_registro #(.bits(2)) bancoOP(.guardar(centro),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(SW[1:0]),.salida(op),.enable(registros[2]));
 	dec_switcher switcher(.cambiar(up),.clock(CLK100MHZ),.hex(mostrar),.salida(dec),.trigger(1'b1));
     
 endmodule
