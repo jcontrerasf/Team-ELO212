@@ -51,9 +51,9 @@ module main(
 	
 	uart_rx_ctrl ctrl(.clock(CLK100MHZ),.reset(~CPU_RESET),.rx_ready(ready),.RGB({LED16_R,LED16_G,LED16_B}));
 	
-	uart_rx recibidor(.i_Clock(CLK100MHZ),.i_Rx_Serial(UART_TXD_IN),.o_Rx_DV(ready),.o_Rx_Byte(out));
+//	uart_rx recibidor(.i_Clock(CLK100MHZ),.i_Rx_Serial(UART_TXD_IN),.o_Rx_DV(ready),.o_Rx_Byte(out));
 
-//    uart_recibidor rx(.data_in(UART_TXD_IN),.clock(CLK100MHZ),.data_out(out),.rx_ready(ready),.btn_rst(~CPU_RESET));
+    uart_recibidor rx(.data_in(UART_TXD_IN),.clock(CLK100MHZ),.data_out(out),.rx_ready(ready),.btn_rst(~CPU_RESET));
 	
 	banco_de_registro #(.bits(8)) bancoA1(.guardar(ready),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(out),.salida(salida),.enable(1'b1));
 //	banco_de_registro #(.bits(8)) bancoA2(.guardar(ready),.clock(CLK100MHZ),.reset(~CPU_RESET),.entrada(out),.salida(salida),.enable(1'b1));

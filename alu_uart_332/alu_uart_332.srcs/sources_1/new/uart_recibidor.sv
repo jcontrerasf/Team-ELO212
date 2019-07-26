@@ -46,7 +46,7 @@ always@(posedge clock) begin
     else state <= next_state;
     if (reset) begin
         counter <= 'd32; //CLKS_PER_BIT/2
-        baud <= 'd0;
+        baud <= 'd1; //0
     end else if (counter == CLKS_PER_BIT) begin
         counter <= 'd0;
         baud <= ~baud;

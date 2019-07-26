@@ -34,7 +34,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/TDM.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/banco_de_registros.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/divider.sv
-  C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/uart_rx.sv
+  C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/uart_recibidor.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/uart_rx_ctrl.sv
   C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_332/alu_uart_332.srcs/sources_1/new/main.sv
 }
