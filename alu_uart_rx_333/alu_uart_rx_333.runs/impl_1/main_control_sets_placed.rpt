@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 26 21:25:20 2019
+| Host         : LAPTOP-EK0UNFM6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            6 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            5 |
+|     12 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           11 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              29 |            9 |
+| Yes          | No                    | No                     |              40 |           11 |
+| Yes          | No                    | Yes                    |              44 |           13 |
+| Yes          | Yes                   | No                     |              13 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|     Clock Signal     |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|  uno/clk             |                                   | multiplex/anodos[4]_i_1_n_0           |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[11]_i_1_n_0 |                                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[15]_i_1_n_0 |                                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[19]_i_1_n_0 |                                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[3]_i_1_n_0  |                                       |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/shift[7]_i_1_n_0  |                                       |                1 |              4 |
+|  uno/clk             |                                   | multiplex/contador[2]                 |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/counter_next      | u32_to_bcd_inst/counter[5]_i_1__0_n_0 |                2 |              5 |
+|  uno/clk             |                                   |                                       |                2 |              7 |
+|  CLK100MHZ_IBUF_BUFG | uart_rx_blk/rx_data[7]_i_1_n_0    | uno/AR[0]                             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | ctrl/FSM_onehot_state_reg[9]_0[1] | uno/AR[0]                             |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | ctrl/FSM_onehot_state_reg[9]_0[2] | uno/AR[0]                             |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | ctrl/FSM_onehot_state_reg[9]_0[0] | uno/AR[0]                             |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | ctrl/FSM_onehot_state_reg[9]_0[3] | uno/AR[0]                             |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | ctrl/FSM_onehot_state[11]_i_1_n_0 | uno/AR[0]                             |                2 |             12 |
+|  CLK100MHZ_IBUF_BUFG | u32_to_bcd_inst/bcd_next          |                                       |                5 |             20 |
+|  CLK100MHZ_IBUF_BUFG |                                   | uno/AR[0]                             |                8 |             26 |
+|  CLK100MHZ_IBUF_BUFG |                                   |                                       |                9 |             30 |
++----------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+
+

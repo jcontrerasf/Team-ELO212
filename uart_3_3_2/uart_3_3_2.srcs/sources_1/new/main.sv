@@ -41,6 +41,7 @@ module main(
     
     assign nada = 4'b0000;
     
+    
     divider #(.maxcount(104166)) uno(.clkin(CLK100MHZ),.reset(CPU_RESET),.clkout(reloj));
     TDM multiplex(.clk(reloj),
     .reset(CPU_RESET),

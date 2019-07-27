@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 26 21:23:44 2019
+# Process ID: 13056
+# Current directory: C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.runs/synth_1/main.vds
+# Journal file: C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4380 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 362.020 ; gain = 79.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/main.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/divider.sv:23]
+	Parameter maxcount bound to: 104166 - type: integer 
+	Parameter delaywidth bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (1#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/divider.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'TDM' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/TDM.sv:40]
+	Parameter digitos bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/TDM.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'TDM' (2#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/TDM.sv:40]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/BCD.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/BCD.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (3#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/BCD.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/ALU.sv:23]
+	Parameter bits bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'unsigned_to_bcd' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/DD.sv:22]
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_SHIFT bound to: 2 - type: integer 
+	Parameter S_ADD3 bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'unsigned_to_bcd' (5#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/DD.sv:22]
+WARNING: [Synth 8-689] width (20) of port connection 'bcd' does not match port width (32) of module 'unsigned_to_bcd' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/main.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctrl' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx_ctrl.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx_ctrl.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctrl' (6#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx_ctrl.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'banco_de_registro' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/banco_de_registro.sv:23]
+	Parameter bits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'banco_de_registro' (7#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/banco_de_registro.sv:23]
+WARNING: [Synth 8-689] width (2) of port connection 'salida' does not match port width (8) of module 'banco_de_registro' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/main.sv:76]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:11]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:38]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_baud_tick_gen.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx.sv:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'data_sync' [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/data_sync.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'data_sync' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/data_sync.sv:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (10#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/uart_rx.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'main' (11#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/main.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.797 ; gain = 136.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.797 ; gain = 136.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.797 ; gain = 136.398
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.742 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 769.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 769.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clkout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/ALU.sv:35]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'unsigned_to_bcd'
+INFO: [Synth 8-5546] ROM "bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_ctrl'
+INFO: [Synth 8-5546] ROM "mostrar" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "save_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                              001 |                              001
+                 S_SHIFT |                              010 |                              010
+                  S_ADD3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'unsigned_to_bcd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            Wait_OP1_LSB |                     000000000001 |                            00000
+           Store_OP1_LSB |                     000000000010 |                            00001
+            Wait_OP1_MSB |                     000000000100 |                            00010
+           Store_OP1_MSB |                     000000001000 |                            00011
+            Wait_OP2_LSB |                     000000010000 |                            00100
+           Store_OP2_LSB |                     000000100000 |                            00101
+            Wait_OP2_MSB |                     000001000000 |                            00110
+           Store_OP2_MSB |                     000010000000 |                            00111
+                Wait_CMD |                     000100000000 |                            01000
+               Store_CMD |                     001000000000 |                            01001
+           Delay_1_cycle |                     010000000000 |                            01010
+       Trigger_TX_result |                     100000000000 |                            01011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+	  12 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module TDM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+Module unsigned_to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module uart_rx_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      3 Bit        Muxes := 1     
+	  12 Input      2 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module banco_de_registro 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'u32_to_bcd_inst/bcd_reg' and it is trimmed from '32' to '20' bits. [C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.srcs/sources_1/new/DD.sv:130]
+INFO: [Synth 8-5546] ROM "u32_to_bcd_inst/bcd_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u32_to_bcd_inst/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uno/clkout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'multiplex/anodos_reg[5]' (FD) to 'multiplex/anodos_reg[7]'
+INFO: [Synth 8-3886] merging instance 'multiplex/anodos_reg[6]' (FD) to 'multiplex/anodos_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\multiplex/anodos_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 769.742 ; gain = 487.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     9|
+|4     |LUT2   |    21|
+|5     |LUT3   |    32|
+|6     |LUT4   |    27|
+|7     |LUT5   |    40|
+|8     |LUT6   |    43|
+|9     |MUXF7  |     7|
+|10    |MUXF8  |     3|
+|11    |FDCE   |    45|
+|12    |FDPE   |     1|
+|13    |FDRE   |   117|
+|14    |FDSE   |     5|
+|15    |IBUF   |     3|
+|16    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+--------------------+------+
+|      |Instance          |Module              |Cells |
++------+------------------+--------------------+------+
+|1     |top               |                    |   384|
+|2     |  alu             |ALU                 |     4|
+|3     |  bancoA1         |banco_de_registro   |     8|
+|4     |  bancoA2         |banco_de_registro_0 |     8|
+|5     |  bancoB1         |banco_de_registro_1 |    12|
+|6     |  bancoB2         |banco_de_registro_2 |    11|
+|7     |  bancoOP         |banco_de_registro_3 |    29|
+|8     |  baud8_tick_blk  |uart_baud_tick_gen  |    28|
+|9     |  ctrl            |uart_rx_ctrl        |    50|
+|10    |  multiplex       |TDM                 |    20|
+|11    |  toseven         |BCD                 |     7|
+|12    |  u32_to_bcd_inst |unsigned_to_bcd     |    95|
+|13    |  uart_rx_blk     |uart_rx             |    43|
+|14    |    rx_sync_inst  |data_sync           |    13|
+|15    |  uno             |divider             |    45|
++------+------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 796.602 ; gain = 163.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.602 ; gain = 514.203
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 796.602 ; gain = 514.203
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.602 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/julio/Desktop/Universidad/TeamELO212/alu_uart_rx_333/alu_uart_rx_333.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 26 21:24:28 2019...
