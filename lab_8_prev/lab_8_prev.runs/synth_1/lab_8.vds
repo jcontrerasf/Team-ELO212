@@ -1,0 +1,668 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug 15 16:52:03 2019
+# Process ID: 7552
+# Current directory: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1
+# Command line: vivado.exe -log lab_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_8.tcl
+# Log file: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1/lab_8.vds
+# Journal file: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab_8.tcl -notrace
+Command: synth_design -top lab_8 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8980 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 393.859 ; gain = 100.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab_8' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1/.Xil/Vivado-7552-LAPTOP-EK0UNFM6/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1/.Xil/Vivado-7552-LAPTOP-EK0UNFM6/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'calculator_screen' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:117]
+	Parameter CUADRILLA_XI bound to: 212 - type: integer 
+	Parameter CUADRILLA_XF bound to: 812 - type: integer 
+	Parameter CUADRILLA_YI bound to: 250 - type: integer 
+	Parameter CUADRILLA_YF bound to: 650 - type: integer 
+	Parameter GRID_X_OFFSET bound to: 20 - type: integer 
+	Parameter GRID_Y_OFFSET bound to: 10 - type: integer 
+	Parameter FIRST_SQRT_X bound to: 400 - type: integer 
+	Parameter FIRST_SQRT_Y bound to: 200 - type: integer 
+	Parameter COLOR_BLUE bound to: 12'b000000001111 
+	Parameter COLOR_YELLOW bound to: 12'b111111110000 
+	Parameter COLOR_RED bound to: 12'b111100000000 
+	Parameter COLOR_BLACK bound to: 12'b000000000000 
+	Parameter COLOR_WHITE bound to: 12'b111111111111 
+	Parameter COLOR_CYAN bound to: 12'b000011111111 
+INFO: [Synth 8-6157] synthesizing module 'driver_vga_1024x768' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/driver_vga.sv:16]
+	Parameter hpixels bound to: 11'b10101010000 
+	Parameter vlines bound to: 10'b1100100101 
+	Parameter hfp bound to: 7'b1000000 
+	Parameter hsc bound to: 7'b1101000 
+	Parameter hbp bound to: 8'b10101000 
+	Parameter vfp bound to: 2'b11 
+	Parameter vsc bound to: 3'b100 
+	Parameter vbp bound to: 5'b11110 
+INFO: [Synth 8-6155] done synthesizing module 'driver_vga_1024x768' (2#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/driver_vga.sv:16]
+WARNING: [Synth 8-689] width (11) of port connection 'hc_visible' does not match port width (12) of module 'driver_vga_1024x768' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:146]
+INFO: [Synth 8-6157] synthesizing module 'template_6x4_600x400' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/templates.sv:29]
+	Parameter d_col bound to: 8'b00011001 
+	Parameter d_row bound to: 7'b0011001 
+	Parameter zeros_col bound to: 2'b00 
+	Parameter zeros_row bound to: 2'b00 
+	Parameter GRID_XI bound to: 212 - type: integer 
+	Parameter GRID_XF bound to: 812 - type: integer 
+	Parameter GRID_YI bound to: 250 - type: integer 
+	Parameter GRID_YF bound to: 650 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'template_6x4_600x400' (3#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/templates.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'hello_world_text_square' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:37]
+	Parameter ancho_pixel bound to: 2'b11 
+	Parameter MENU_X_LOCATION bound to: 11'b00001000110 
+	Parameter MENU_Y_LOCATION bound to: 11'b00000110010 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 15 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 4 - type: integer 
+	Parameter MENU_WIDTH bound to: 273 - type: integer 
+	Parameter MENU_HEIGHT bound to: 99 - type: integer 
+	Parameter MENU_X_TOP bound to: 343 - type: integer 
+	Parameter MENU_Y_TOP bound to: 149 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'characters' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/characters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'characters' (4#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/characters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'hello_world_text_square' (5#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:432]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 420 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 210 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 469 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 273 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char' (6#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:432]
+INFO: [Synth 8-6157] synthesizing module 'show_one_line' [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:242]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter LINE_X_LOCATION bound to: 795 - type: integer 
+	Parameter LINE_Y_LOCATION bound to: 520 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 3 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 95 - type: integer 
+	Parameter MENU_HEIGHT bound to: 45 - type: integer 
+	Parameter LINE_X_TOP bound to: 890 - type: integer 
+	Parameter LINE_Y_TOP bound to: 565 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_line' (7#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/text_square.sv:242]
+INFO: [Synth 8-6155] done synthesizing module 'calculator_screen' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:117]
+WARNING: [Synth 8-3848] Net LED in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:5]
+WARNING: [Synth 8-3848] Net CA in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CB in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CC in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CD in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CE in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CF in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CG in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net DP in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:7]
+WARNING: [Synth 8-3848] Net AN in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:8]
+WARNING: [Synth 8-3848] Net op in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:37]
+WARNING: [Synth 8-3848] Net pos_x in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:38]
+WARNING: [Synth 8-3848] Net pos_y in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:39]
+WARNING: [Synth 8-3848] Net op1 in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:40]
+WARNING: [Synth 8-3848] Net op2 in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'lab_8' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[11]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[10]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[9]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[8]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[11]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[10]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[9]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[8]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[11]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[10]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[9]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[8]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[0]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[15]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[14]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[13]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[12]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[11]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[10]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[9]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[8]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[7]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[6]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[5]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[4]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[3]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[2]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[1]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[0]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CA
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CB
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CC
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CD
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CE
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CF
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CG
+WARNING: [Synth 8-3331] design lab_8 has unconnected port DP
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[7]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[6]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[5]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[4]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[3]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[2]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[1]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port AN[0]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port SW[1]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port BTNC
+WARNING: [Synth 8-3331] design lab_8 has unconnected port BTNU
+WARNING: [Synth 8-3331] design lab_8 has unconnected port BTNL
+WARNING: [Synth 8-3331] design lab_8 has unconnected port BTNR
+WARNING: [Synth 8-3331] design lab_8 has unconnected port BTND
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CPU_RESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 449.996 ; gain = 156.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line42:pos_x[2] to constant 0 [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:42]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line42:pos_x[1] to constant 0 [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:42]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line42:pos_x[0] to constant 0 [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:42]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line42:pos_y[1] to constant 0 [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:42]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line42:pos_y[0] to constant 0 [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/new/lab_8.sv:42]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 449.996 ; gain = 156.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 449.996 ; gain = 156.723
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc:55]
+Finished Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/lab_8_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_8_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab_8_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 806.961 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 806.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 806.961 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 806.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vc_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_y_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_x_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lin_h_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 9     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 11    
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    119 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 3     
+	   4 Input      6 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 14    
+	   4 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module driver_vga_1024x768 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module template_6x4_600x400 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module hello_world_text_square 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    119 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_line 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module calculator_screen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "vc_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_x_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_y_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lin_h_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op1[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------+---------------+---------------+----------------+
+|Module Name             | RTL Object    | Depth x Width | Implemented As | 
++------------------------+---------------+---------------+----------------+
+|characters              | vec_char      | 256x35        | LUT            | 
+|hello_world_text_square | m_ch/vec_char | 256x35        | LUT            | 
+|show_one_char           | m_ch/vec_char | 256x35        | LUT            | 
+|show_one_line           | m_ch/vec_char | 256x35        | LUT            | 
++------------------------+---------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 806.961 ; gain = 513.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 888.848 ; gain = 595.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |    12|
+|3     |LUT1      |    23|
+|4     |LUT2      |    44|
+|5     |LUT3      |    52|
+|6     |LUT4      |    57|
+|7     |LUT5      |    66|
+|8     |LUT6      |   218|
+|9     |MUXF7     |    35|
+|10    |MUXF8     |     1|
+|11    |FDRE      |   136|
+|12    |FDSE      |     6|
+|13    |OBUF      |    14|
+|14    |OBUFT     |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------------+------+
+|      |Instance         |Module                  |Cells |
++------+-----------------+------------------------+------+
+|1     |top              |                        |   698|
+|2     |  nolabel_line42 |calculator_screen       |   650|
+|3     |    ch_00        |show_one_char           |    66|
+|4     |    exe          |show_one_line           |    87|
+|5     |    m_driver     |driver_vga_1024x768     |   234|
+|6     |    m_hw         |hello_world_text_square |   209|
+|7     |      m_ch       |characters              |   117|
+|8     |    template_1   |template_6x4_600x400    |    54|
++------+-----------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 91 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 898.770 ; gain = 248.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 898.770 ; gain = 605.496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 898.770 ; gain = 616.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 898.770 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/synth_1/lab_8.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab_8_utilization_synth.rpt -pb lab_8_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 15 16:53:04 2019...

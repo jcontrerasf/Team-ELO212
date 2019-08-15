@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug 15 16:53:12 2019
+# Process ID: 15088
+# Current directory: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/impl_1
+# Command line: vivado.exe -log lab_8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab_8.tcl -notrace
+# Log file: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/impl_1/lab_8.vdi
+# Journal file: C:/Users/julio/Desktop/Universidad/TeamELO212/lab_8_prev/lab_8_prev.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab_8.tcl -notrace
