@@ -112,12 +112,12 @@ module hex_to_bit_ascii(
 	);
     
 //comprobar esto, puede que esté al revés
-    always_comb begin
+   // always_comb begin
 	//   bit_ascii[7:0] = (num[0]==1'b1) ? "1" : "0";
-	   case(num[0])
-	       0: bit_ascii = "0"; //ayuda me da erroooor
-	   endcase
-	end
+//	   case(num[0])
+//	       0: bit_ascii = "0"; //ayuda me da erroooor
+	//   endcase
+	//end
 endmodule
 
 /**
@@ -194,8 +194,8 @@ module calculator_screen(
 	localparam GRID_X_OFFSET	= 20;
 	localparam GRID_Y_OFFSET	= 10;
 	
-	localparam FIRST_SQRT_X = 400;
-	localparam FIRST_SQRT_Y = 200;
+	localparam FIRST_SQRT_X = 212; //estaba en 400
+	localparam FIRST_SQRT_Y = 184; //estaba en 200
 	
 	hello_world_text_square m_hw(	.clk(clk_vga), 
 									.rst(1'b0), 

@@ -56,7 +56,7 @@ module grid_cursor(
 	logic restriction_ne;
     
 //definición de val
-	always_comb
+	always_comb begin
 		case(pos_x)
 			3'd0:
 					case(pos_y)
@@ -100,13 +100,75 @@ module grid_cursor(
 						2'd1: val = 5'b1_0101;//or
 						2'd2: val = 5'b1_0110;//CE
 						2'd3: val = 5'b1_0111;//CLR
-					endcase
+				endcase
 			default:
 					val = 5'h1F;
 		endcase
 
-	//FILL HERE
-	//movimiento de pos_x y pos_y.    
+
+	
+	//valores por defecto
+	pos_x_next = 3'd0;
+	pos_y_next = 2'd0;
+	
+	case(pos_x)
+	   3'd0: begin
+	           if(dir_right) pos_x_next = 3'd1;
+	           else if (dir_left) pos_x_next = 3'd5;
+	         end
+	   3'd1: begin
+	           if(dir_right) pos_x_next = 3'd2;
+	           else if (dir_left) pos_x_next = 3'd0;
+	         end
+	   3'd2: begin
+	           if(dir_right) pos_x_next = 3'd3;
+	           else if (dir_left) pos_x_next = 3'd1;
+	         end
+	   3'd3: begin
+	           if(dir_right) pos_x_next = 3'd4;
+	           else if (dir_left) pos_x_next = 3'd2;
+	         end
+	   3'd4: begin
+	           if(dir_right) pos_x_next = 3'd5;
+	           else if (dir_left) pos_x_next = 3'd3;
+	         end
+	   3'd5: begin
+	           if(dir_right) pos_x_next = 3'd0;
+	           else if (dir_left) pos_x_next = 3'd4;
+	         end
+	   default: pos_x_next = 3'd0; 
+	endcase
+	
+	
+	case(pos_y) //disminuye con dir_up
+	   2'd0: begin
+	           if(dir_up) pos_y_next = 2'd3;
+	           else if (dir_down) pos_y_next = 2'd1;
+	         end
+	   2'd1: begin
+	           if(dir_up) pos_y_next = 2'd0;
+	           else if (dir_down) pos_y_next = 2'd2;
+	         end
+	   2'd2: begin
+	           if (dir_up || ( restriction && (pos_x==3'd2 || pos_x==3'd3))) pos_y_next = 2'd1;
+	           else if (dir_down) pos_y_next = 2'd3;
+	         end
+	   2'd3: begin
+	           if(dir_up || (restriction && pos_x<3'd4)) pos_y_next = 2'd2;
+	           else if (dir_down) pos_y_next = 2'd0;
+	         end
+	   default: pos_y_next = 2'd0;
+	endcase
+ 	
+	end
+	
+	always_ff@(posedge clk) begin
+	   if(rst) //verificar si esta bien o debe ir negado
+	       {pos_x,pos_y} <= {3'd0,2'd0};
+	   else
+	       {pos_x,pos_y} <= {pos_x_next, pos_y_next};
+	end
+	
 
 
 endmodule
