@@ -284,7 +284,7 @@ module characters(
 			8'd127: vec_char=vect_izq;
 									
 			8'd164: vec_char=vect_char_nn;//??
-			default:vec_char=vect_num_p;//punto
+			default:vec_char=vect_space;//antes era el punto
 	endcase
 	
 	
