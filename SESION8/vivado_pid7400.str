@@ -1060,3 +1060,313 @@ selectCodeEditor("digito_in.sv", 84, 148); // cl (w, cp)
 selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 325 seconds
+selectCodeEditor("digito_in.sv", 196, 227); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// Elapsed time: 195 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 61 MB. Current time: 8/19/19, 10:18:23 PM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 62 MB. Current time: 8/19/19, 10:48:23 PM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 62 MB. Current time: 8/19/19, 11:18:23 PM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 62 MB. Current time: 8/19/19, 11:48:24 PM CLST
+// Elapsed time: 5740 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FSM_principal"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 20 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/FSM_principal.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (cp):  Add Sources  : addNotify
+// Tcl Message: add_files C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/FSM_principal.sv 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 219 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_principal (FSM_principal.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_principal (FSM_principal.sv)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("FSM_principal.sv", 180, 225); // cl (w, cp)
+// Elapsed time: 16 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 280, 142); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("digito_in.sv", 410, 167); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 170, 237); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 87, 140); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 153, 178); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 227, 232); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("FSM_principal.sv", 268, 216); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 263, 215); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 335, 146); // cl (w, cp)
+// Elapsed time: 152 seconds
+selectCodeEditor("FSM_principal.sv", 226, 178); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("FSM_principal.sv", 200, 193); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 261, 267); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 30, 196); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 244, 229); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 202, 280); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 197, 278); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 197, 278, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("FSM_principal.sv", 158, 260); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 222, 260); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 217, 227); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 211, 217); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 389, 259); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("FSM_principal.sv", 585, 263); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 577, 270); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("FSM_principal.sv", 223, 199); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 231, 219); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("FSM_principal.sv", 610, 261); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 7, 92); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("FSM_principal.sv", 223, 127); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("FSM_principal.sv", 363, 127); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 366, 127); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 345, 126); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 147, 128); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("FSM_principal.sv", 96, 120); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("FSM_principal.sv", 34, 214); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 126, 227); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM_principal.sv", 374, 183); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 287, 168); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 614, 98); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("FSM_principal.sv", 119, 114); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 177, 108); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 190, 108); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 133, 69); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 168, 104); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("FSM_principal.sv", 74, 117); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectCodeEditor("FSM_principal.sv", 217, 217); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 312, 214); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 412, 215); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 349, 212); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("FSM_principal.sv", 104, 127); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM_principal.sv", 426, 209); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 523, 212); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 448, 213); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("FSM_principal.sv", 521, 209); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 585, 213); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 256, 131); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 609, 211); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 583, 229); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 476, 224); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 379, 228); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 161, 227); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("FSM_principal.sv", 167, 226); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("digito_in.sv", 222, 198); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 236, 101); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("digito_in.sv", 235, 90); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 252, 121); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 251, 109); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 253, 98); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 246, 94); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 259, 138); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("FSM_principal.sv", 161, 213); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 62 MB. Current time: 8/20/19, 12:18:24 AM CLST
+// Elapsed time: 35 seconds
+selectCodeEditor("FSM_principal.sv", 590, 263); // cl (w, cp)
+// Elapsed time: 335 seconds
+selectCodeEditor("FSM_principal.sv", 177, 91); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 231, 91); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'c'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 171, 94); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 158, 96); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 164, 94); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 173, 93); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 165, 95); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 231, 92); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("FSM_principal.sv", 30, 148); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("FSM_principal.sv", 166, 92); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("FSM_principal.sv", 223, 181); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 98, 182); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 265, 180); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 205, 201); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 170, 41); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 170, 43); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("FSM_principal.sv", 161, 217); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("FSM_principal.sv", 113, 186); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("FSM_principal.sv", 121, 182); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 314, 163); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 31, 161); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 345, 165); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "FSM_principal.sv", 'v'); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 85, 177); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 84, 228); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 94, 128); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 202, 151); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 321, 161); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 162, 174); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 164, 165); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("FSM_principal.sv", 217, 184); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 259, 201); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 260, 214); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("FSM_principal.sv", 190, 184); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, templates (templates.sv)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, templates (templates.sv)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_principal (FSM_principal.sv)]", 13); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_principal (FSM_principal.sv)]", 13); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 2); // k (j, cp)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_principal.sv", 6); // k (j, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("FSM_principal.sv", 511, 101); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("FSM_principal.sv", 219, 163); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 192, 160); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 113, 172); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("FSM_principal.sv", 134, 178); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 208, 178); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 251, 205); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 251, 189); // cl (w, cp)
+// Elapsed time: 43 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "show"); // l (aT, cp)
+selectCodeEditor("FSM_principal.sv", 145, 219); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 198, 192); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("FSM_principal.sv", 27, 130); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 179, 131); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 429, 162); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("FSM_principal.sv", 212, 199); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("FSM_principal.sv", 252, 228); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 248, 213); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("FSM_principal.sv", 28, 214); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("FSM_principal.sv", 90, 242); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 214, 270); // cl (w, cp)
+selectCodeEditor("FSM_principal.sv", 197, 267); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("FSM_principal.sv", 157, 265); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

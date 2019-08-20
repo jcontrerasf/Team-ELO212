@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module digito_in
+module digito_in //operando_in en realidad j3j3
 (
 	input logic clock, reset, enter, exe, start, modo, //modo: 0=dec, 1=hex
 	input logic [15:0] in_val, //valor de entrada
@@ -46,7 +46,7 @@ module digito_in
  //FSM state register:
 always@(posedge clock or posedge reset)
     	if(reset)
-    		state <= Wait_D1;
+    		state <= Idle;
     	else
     		state <= next_state;
 
@@ -69,6 +69,7 @@ always@(posedge clock or posedge reset)
                 //to_reg = 'b0;
                 //save = 1'b1; no se si son necesarias, el reg deberia empezar en 0
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end
@@ -87,6 +88,7 @@ always@(posedge clock or posedge reset)
                next_state = Save_D2;
             else if(exe) begin
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end
@@ -105,6 +107,7 @@ always@(posedge clock or posedge reset)
                next_state = Save_D3;
             else if(exe) begin
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end
@@ -121,6 +124,7 @@ always@(posedge clock or posedge reset)
                next_state = Save_D4;
             else if(exe) begin
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end
@@ -138,6 +142,7 @@ always@(posedge clock or posedge reset)
                next_state = Save_D5;
             else if(exe) begin
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end
@@ -156,6 +161,7 @@ always@(posedge clock or posedge reset)
                next_state = Save_D5;
             else if(exe) begin
                 listo = 1'b1;
+                next_state = Idle;
             end
                 
 		end

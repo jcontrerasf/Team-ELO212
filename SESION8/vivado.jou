@@ -45,3 +45,6 @@ refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 close [ open C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/digito_in.sv w ]
 add_files C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/digito_in.sv
 update_compile_order -fileset sources_1
+close [ open C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/FSM_principal.sv w ]
+add_files C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/FSM_principal.sv
+update_compile_order -fileset sources_1
