@@ -1,0 +1,855 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug 18 14:57:39 2019
+# Process ID: 1136
+# Current directory: C:/Users/ThePhonkey/Desktop/ELO212/SESION8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14896 C:\Users\ThePhonkey\Desktop\ELO212\SESION8\SESION8.xpr
+# Log file: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/vivado.log
+# Journal file: C:/Users/ThePhonkey/Desktop/ELO212/SESION8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 680.297 ; gain = 98.199
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 15:13:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 15:13:04 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 15:23:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 15:23:22 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 15:34:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 15:34:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 15:43:49 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 15:43:49 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 15:54:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 15:54:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:08:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 16:08:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:18:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 16:18:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:33:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:34:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:39:25 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 16:39:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:44:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 16:44:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 16:53:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 16:53:32 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:00:46 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:00:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:05:57 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:07:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:07:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:19:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:19:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'reset_runs' was cancelled
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:21:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:21:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:23:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:23:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1937.152 ; gain = 34.195
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:28:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:28:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:31:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:31:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:31:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:31:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:34:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:34:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:39:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:39:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 17:39:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 17:39:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 18:54:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 18:54:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'reset_runs' was cancelled
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 18:55:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 18:55:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 18:59:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 19:30:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 19:30:58 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 19:35:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 19:35:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 19:41:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 19:41:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 20:26:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 20:26:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 20:31:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 20:31:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 21:53:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 21:53:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 22:05:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 22:05:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 22:15:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 22:15:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 22:23:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 22:23:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 22:38:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 22:38:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:00:34 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:00:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:05:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:05:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:11:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:11:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:18:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:18:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:24:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:25:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:25:58 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Sun Aug 18 23:57:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Sun Aug 18 23:57:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 00:27:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 00:27:57 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 00:31:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 00:31:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 00:31:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 00:31:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 00:59:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 00:59:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 01:00:46 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 01:00:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 01:07:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 01:07:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2793.141 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2793.141 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 01:30:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 01:30:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+export_ip_user_files -of_objects  [get_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon Aug 19 08:41:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log
+[Mon Aug 19 08:41:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv w ]
+add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/Print.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:]

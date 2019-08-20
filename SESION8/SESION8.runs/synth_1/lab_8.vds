@@ -1,0 +1,1557 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 19 16:03:29 2019
+# Process ID: 1308
+# Current directory: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1
+# Command line: vivado.exe -log lab_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_8.tcl
+# Log file: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/lab_8.vds
+# Journal file: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab_8.tcl -notrace
+Command: synth_design -top lab_8 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9164 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 393.398 ; gain = 99.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab_8' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/.Xil/Vivado-1308-LAPTOP-EK0UNFM6/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/.Xil/Vivado-1308-LAPTOP-EK0UNFM6/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:23]
+	Parameter DELAY bound to: 15 - type: integer 
+	Parameter DELAY_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/debouncer.sv:23]
+WARNING: [Synth 8-350] instance 'btn_up' of module 'debouncer' requires 6 connections, but only 4 given [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:46]
+WARNING: [Synth 8-350] instance 'btn_down' of module 'debouncer' requires 6 connections, but only 4 given [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:47]
+WARNING: [Synth 8-350] instance 'btn_right' of module 'debouncer' requires 6 connections, but only 4 given [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:48]
+WARNING: [Synth 8-350] instance 'btn_left' of module 'debouncer' requires 6 connections, but only 4 given [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'grid_cursor' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:142]
+INFO: [Synth 8-6155] done synthesizing module 'grid_cursor' (3#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/grid_cursor.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_ascii' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:103]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_ascii' (4#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'calculator_screen' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:194]
+	Parameter CUADRILLA_XI bound to: 212 - type: integer 
+	Parameter CUADRILLA_XF bound to: 812 - type: integer 
+	Parameter CUADRILLA_YI bound to: 250 - type: integer 
+	Parameter CUADRILLA_YF bound to: 650 - type: integer 
+	Parameter COLOR_BLUE bound to: 12'b000000001111 
+	Parameter COLOR_YELLOW bound to: 12'b111111110000 
+	Parameter COLOR_RED bound to: 12'b111100000000 
+	Parameter COLOR_BLACK bound to: 12'b000000000000 
+	Parameter COLOR_WHITE bound to: 12'b111111111111 
+	Parameter COLOR_CYAN bound to: 12'b000011111111 
+INFO: [Synth 8-6157] synthesizing module 'driver_vga_1024x768' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:16]
+	Parameter hpixels bound to: 11'b10101010000 
+	Parameter vlines bound to: 10'b1100100101 
+	Parameter hfp bound to: 7'b1000000 
+	Parameter hsc bound to: 7'b1101000 
+	Parameter hbp bound to: 8'b10101000 
+	Parameter vfp bound to: 2'b11 
+	Parameter vsc bound to: 3'b100 
+	Parameter vbp bound to: 5'b11110 
+INFO: [Synth 8-6155] done synthesizing module 'driver_vga_1024x768' (5#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/driver_vga.sv:16]
+WARNING: [Synth 8-689] width (11) of port connection 'hc_visible' does not match port width (12) of module 'driver_vga_1024x768' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:223]
+INFO: [Synth 8-6157] synthesizing module 'template_6x4_600x400' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:29]
+	Parameter d_col bound to: 8'b00011001 
+	Parameter d_row bound to: 7'b0011001 
+	Parameter zeros_col bound to: 2'b00 
+	Parameter zeros_row bound to: 2'b00 
+	Parameter GRID_XI bound to: 212 - type: integer 
+	Parameter GRID_XF bound to: 812 - type: integer 
+	Parameter GRID_YI bound to: 250 - type: integer 
+	Parameter GRID_YF bound to: 650 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'template_6x4_600x400' (6#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/templates.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'print' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:23]
+	Parameter GRID_X_OFFSET bound to: 20 - type: integer 
+	Parameter GRID_Y_OFFSET bound to: 10 - type: integer 
+	Parameter FIRST_SQRT_X bound to: 220 - type: integer 
+	Parameter FIRST_SQRT_Y bound to: 260 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'show_one_char' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 240 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 289 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'characters' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'characters' (7#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/characters.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized0' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 340 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 389 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized0' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized1' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 440 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 489 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized1' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized2' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 540 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 589 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized2' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized3' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 640 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 689 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized3' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized4' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 740 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 270 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 789 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized4' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized5' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 240 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 289 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized5' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized6' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 340 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 389 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized6' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized7' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 440 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 489 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized7' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized8' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 540 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 589 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized8' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized9' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 640 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 689 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized9' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized10' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 740 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 370 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 789 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 433 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized10' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized11' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 240 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 470 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 289 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 533 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized11' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized12' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 340 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 470 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 389 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 533 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized12' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized13' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 440 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 470 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 489 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 533 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized13' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized14' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 540 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 470 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 589 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 533 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized14' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized15' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 640 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 470 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 689 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 533 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized15' (8#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_line' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter LINE_X_LOCATION bound to: 725 - type: integer 
+	Parameter LINE_Y_LOCATION bound to: 480 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 2 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 65 - type: integer 
+	Parameter MENU_HEIGHT bound to: 45 - type: integer 
+	Parameter LINE_X_TOP bound to: 790 - type: integer 
+	Parameter LINE_Y_TOP bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_line' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized16' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 240 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 570 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 289 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 633 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized16' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized17' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 340 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 570 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 389 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 633 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized17' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized18' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 440 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 570 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 489 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 633 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized18' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_char__parameterized19' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 7 - type: integer 
+	Parameter CHAR_X_LOC bound to: 540 - type: integer 
+	Parameter CHAR_Y_LOC bound to: 570 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 1 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 49 - type: integer 
+	Parameter MENU_HEIGHT bound to: 63 - type: integer 
+	Parameter CHAR_X_TOP bound to: 589 - type: integer 
+	Parameter CHAR_Y_TOP bound to: 633 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_char__parameterized19' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'show_one_line__parameterized0' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter LINE_X_LOCATION bound to: 615 - type: integer 
+	Parameter LINE_Y_LOCATION bound to: 580 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 3 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 95 - type: integer 
+	Parameter MENU_HEIGHT bound to: 45 - type: integer 
+	Parameter LINE_X_TOP bound to: 710 - type: integer 
+	Parameter LINE_Y_TOP bound to: 625 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_line__parameterized0' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'show_one_line__parameterized1' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+	Parameter n bound to: 3 - type: integer 
+	Parameter ancho_pixel bound to: 5 - type: integer 
+	Parameter LINE_X_LOCATION bound to: 715 - type: integer 
+	Parameter LINE_Y_LOCATION bound to: 580 - type: integer 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 3 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 1 - type: integer 
+	Parameter MENU_WIDTH bound to: 95 - type: integer 
+	Parameter MENU_HEIGHT bound to: 45 - type: integer 
+	Parameter LINE_X_TOP bound to: 810 - type: integer 
+	Parameter LINE_Y_TOP bound to: 625 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'show_one_line__parameterized1' (9#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:244]
+INFO: [Synth 8-6157] synthesizing module 'activetext' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:37]
+	Parameter ancho_pixel bound to: 2'b11 
+	Parameter MENU_X_LOCATION bound to: 11'b00001000110 
+	Parameter MENU_Y_LOCATION bound to: 11'b00000110010 
+	Parameter CHARACTER_WIDTH bound to: 8'b00000101 
+	Parameter CHARACTER_HEIGHT bound to: 8'b00001000 
+	Parameter MAX_CHARACTER_LINE bound to: 7 - type: integer 
+	Parameter MAX_NUMBER_LINES bound to: 3 - type: integer 
+	Parameter MENU_WIDTH bound to: 129 - type: integer 
+	Parameter MENU_HEIGHT bound to: 75 - type: integer 
+	Parameter MENU_X_TOP bound to: 199 - type: integer 
+	Parameter MENU_Y_TOP bound to: 125 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'activetext' (10#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/text_square.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'print' (11#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/print.sv:23]
+WARNING: [Synth 8-3848] Net text_sqrt_bg in module/entity calculator_screen does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:241]
+WARNING: [Synth 8-3848] Net text_sqrt_fg in module/entity calculator_screen does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:240]
+INFO: [Synth 8-6155] done synthesizing module 'calculator_screen' (12#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:194]
+WARNING: [Synth 8-3848] Net LED in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:5]
+WARNING: [Synth 8-3848] Net CA in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CB in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CC in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CD in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CE in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CF in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net CG in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:6]
+WARNING: [Synth 8-3848] Net DP in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:7]
+WARNING: [Synth 8-3848] Net AN in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:8]
+WARNING: [Synth 8-3848] Net op in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:70]
+WARNING: [Synth 8-3848] Net op2 in module/entity lab_8 does not have driver. [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:71]
+INFO: [Synth 8-6155] done synthesizing module 'lab_8' (13#1) [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:1]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[41]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[40]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[39]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[38]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[37]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[36]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[35]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[34]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[33]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[32]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[31]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[30]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[29]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[28]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[27]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[26]
+WARNING: [Synth 8-3331] design print has unconnected port in_squares[25]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[41]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[40]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[39]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[38]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[37]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[36]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[35]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[34]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[33]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[32]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[31]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[30]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[29]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[28]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[27]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[26]
+WARNING: [Synth 8-3331] design print has unconnected port in_chars[25]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port mode[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[11]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[10]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[9]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[8]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port op2[0]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[15]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[14]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[13]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[12]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[11]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[10]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[9]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[8]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[7]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[6]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[5]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[4]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[3]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[2]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[1]
+WARNING: [Synth 8-3331] design calculator_screen has unconnected port input_screen[0]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[15]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[14]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[13]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[12]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[11]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[10]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[9]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[8]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[7]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[6]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[5]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[4]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[3]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[2]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[1]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port LED[0]
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CA
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CB
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CC
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CD
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CE
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CF
+WARNING: [Synth 8-3331] design lab_8 has unconnected port CG
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 464.641 ; gain = 171.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 464.641 ; gain = 171.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 464.641 ; gain = 171.211
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_1_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_1_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_8_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab_8_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 824.773 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 824.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 824.773 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 824.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pos_y_reg' in module 'grid_cursor'
+INFO: [Synth 8-802] inferred FSM for state register 'pos_x_reg' in module 'grid_cursor'
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_y_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_y_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_y_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pos_x_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vc_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_y_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matrix_x_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lin_h_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "contador_pixels_verticales_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "push_menu_minimat_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_x_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "push_menu_minimat_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "menu_character_position_y_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pos_y_reg' using encoding 'sequential' in module 'grid_cursor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+                 iSTATE2 |                              001 |                              101
+                 iSTATE3 |                              010 |                              100
+                 iSTATE1 |                              011 |                              011
+                 iSTATE0 |                              100 |                              010
+                  iSTATE |                              101 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pos_x_reg' using encoding 'sequential' in module 'grid_cursor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 53    
+	   2 Input      8 Bit       Adders := 51    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 99    
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 51    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 99    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   3 Input     56 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 50    
+	   4 Input      8 Bit        Muxes := 50    
+	   2 Input      6 Bit        Muxes := 5     
+	   4 Input      6 Bit        Muxes := 5     
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 152   
+	   4 Input      3 Bit        Muxes := 50    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 91    
+	   4 Input      1 Bit        Muxes := 56    
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module grid_cursor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module driver_vga_1024x768 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module template_6x4_600x400 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module show_one_char 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_line 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_char__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_line__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module show_one_line__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module activetext 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     56 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module calculator_screen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "ch_00/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_00/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_01/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_01/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_02/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_02/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_03/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_03/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_04/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_04/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_05/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_05/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_06/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_06/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_07/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_07/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_08/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_08/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_09/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_09/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_10/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_10/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_11/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_11/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_12/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_12/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_13/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_13/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_14/push_menu_minimat_x_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ch_14/push_menu_minimat_y_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "nolabel_line75/m_driver/vc_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line75/template_1/matrix_x_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line75/template_1/matrix_y_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nolabel_line75/template_1/lin_h_next" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------------------+---------------+----------------+
+|Module Name  | RTL Object              | Depth x Width | Implemented As | 
++-------------+-------------------------+---------------+----------------+
+|hex_to_ascii | ascii_conv              | 32x7          | LUT            | 
+|characters   | vec_char                | 256x35        | LUT            | 
+|characters   | vec_char                | 256x35        | LUT            | 
+|activetext   | m_ch/vec_char           | 256x35        | LUT            | 
+|lab_8        | valorastring/ascii_conv | 32x7          | LUT            | 
++-------------+-------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 824.773 ; gain = 531.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 853.137 ; gain = 559.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |    10|
+|3     |LUT1      |    47|
+|4     |LUT2      |   153|
+|5     |LUT3      |   183|
+|6     |LUT4      |   253|
+|7     |LUT5      |   305|
+|8     |LUT6      |   600|
+|9     |MUXF7     |    38|
+|10    |MUXF8     |     2|
+|11    |FDRE      |   797|
+|12    |FDSE      |     6|
+|13    |IBUF      |     6|
+|14    |OBUF      |    14|
+|15    |OBUFT     |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------------------+------+
+|      |Instance         |Module                         |Cells |
++------+-----------------+-------------------------------+------+
+|1     |top              |                               |  2448|
+|2     |  btn_down       |debouncer                      |    13|
+|3     |  btn_left       |debouncer_0                    |    13|
+|4     |  btn_right      |debouncer_1                    |    13|
+|5     |  btn_up         |debouncer_2                    |    13|
+|6     |  item6          |grid_cursor                    |    26|
+|7     |  nolabel_line75 |calculator_screen              |  2316|
+|8     |    m_driver     |driver_vga_1024x768            |   435|
+|9     |    onscreen     |print                          |  1824|
+|10    |      ch_00      |show_one_char                  |    66|
+|11    |      ch_01      |show_one_char__parameterized0  |    65|
+|12    |      ch_02      |show_one_char__parameterized1  |    65|
+|13    |      ch_03      |show_one_char__parameterized2  |    65|
+|14    |      ch_04      |show_one_char__parameterized3  |    65|
+|15    |      ch_05      |show_one_char__parameterized4  |    65|
+|16    |      ch_06      |show_one_char__parameterized5  |    64|
+|17    |      ch_07      |show_one_char__parameterized6  |    64|
+|18    |      ch_08      |show_one_char__parameterized7  |    64|
+|19    |      ch_09      |show_one_char__parameterized8  |    64|
+|20    |      ch_10      |show_one_char__parameterized9  |    64|
+|21    |      ch_11      |show_one_char__parameterized10 |    64|
+|22    |        m_ch     |characters_6                   |     1|
+|23    |      ch_12      |show_one_char__parameterized11 |    65|
+|24    |      ch_13      |show_one_char__parameterized12 |    65|
+|25    |      ch_14      |show_one_char__parameterized13 |    65|
+|26    |      ch_15      |show_one_char__parameterized14 |    65|
+|27    |      ch_16      |show_one_char__parameterized15 |    66|
+|28    |      ch_17      |show_one_line                  |    83|
+|29    |        m_ch     |characters_5                   |     5|
+|30    |      ch_18      |show_one_char__parameterized16 |    64|
+|31    |      ch_19      |show_one_char__parameterized17 |    64|
+|32    |      ch_20      |show_one_char__parameterized18 |    64|
+|33    |      ch_21      |show_one_char__parameterized19 |    64|
+|34    |      ch_22      |show_one_line__parameterized0  |    82|
+|35    |        m_ch     |characters_4                   |     5|
+|36    |      ch_23      |show_one_line__parameterized1  |    86|
+|37    |        m_ch     |characters_3                   |     9|
+|38    |      ch_24      |activetext                     |   216|
+|39    |        m_ch     |characters                     |   117|
+|40    |    template_1   |template_6x4_600x400           |    56|
++------+-----------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 920.734 ; gain = 267.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 920.734 ; gain = 627.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 920.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+224 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 920.734 ; gain = 638.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 920.734 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/lab_8.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab_8_utilization_synth.rpt -pb lab_8_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 16:04:57 2019...

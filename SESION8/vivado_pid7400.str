@@ -1,0 +1,1062 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 7400
+License: Customer
+
+Current time: 	Mon Aug 19 15:58:54 CLST 2019
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 594 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinxx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinxx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	julio
+User home directory: C:/Users/julio
+User working directory: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinxx/Vivado
+HDI_APPROOT: C:/Xilinxx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinxx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinxx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/julio/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/julio/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/julio/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinxx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/vivado.log
+Vivado journal file location: 	C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/vivado.jou
+Engine tmp dir: 	C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/.Xil/Vivado-7400-LAPTOP-EK0UNFM6
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinxx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinxx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinxx/Vivado/2018.3
+XILINX_SDK: C:/Xilinxx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinxx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinxx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 525 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1201 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\julio\Desktop\Universidad\TeamELO212\SESION8\SESION8.xpr. Version: Vivado v2018.3 
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 618ms to process. Increasing delay to 4000 ms.
+// Tcl Message: open_project C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 525 MB. GUI used memory: 41 MB. Current time: 8/19/19, 3:58:56 PM CLST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 547 MB. GUI used memory: 40 MB. Current time: 8/19/19, 3:59:15 PM CLST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 84 MB (+85608kb) [00:01:24]
+// [Engine Memory]: 602 MB (+480000kb) [00:01:24]
+// [GUI Memory]: 89 MB (+1028kb) [00:01:29]
+// WARNING: HEventQueue.dispatchEvent() is taking  8468 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1045 ms.
+// Tcl Message: open_project C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinxx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 47 MB. Current time: 8/19/19, 3:59:33 PM CLST
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 631.457 ; gain = 74.434 
+// Project name: SESION8; location: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8; part: xc7a100tcsg324-1
+// [GUI Memory]: 104 MB (+10532kb) [00:01:32]
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 640 MB (+7602kb) [00:01:33]
+// Tcl Message: update_compile_order -fileset sources_1 
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// PAPropertyPanels.initPanels (lab_8.sv) elapsed time: 0.3s
+// Elapsed time: 217 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, space_padding (lab_8.sv)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, space_padding (lab_8.sv)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), valorastring : hex_to_ascii (lab_8.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), valorastring : hex_to_ascii (lab_8.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), template_1 : template_6x4_600x400 (templates.sv)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), template_1 : template_6x4_600x400 (templates.sv)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 30 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// WARNING: HEventQueue.dispatchEvent() is taking  528174 ms.
+// Elapsed time: 1410 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // X (q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (print.sv) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2121 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 649 MB. GUI used memory: 53 MB. Current time: 8/19/19, 4:29:36 PM CLST
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 681.969 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5351 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,542 MB. GUI used memory: 53 MB. Current time: 8/19/19, 4:29:57 PM CLST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1605.984 ; gain = 924.016 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,544 MB (+914704kb) [00:31:56]
+// Elapsed time: 14 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bx (cp)
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+// HMemoryUtils.trashcanNow. Engine heap size: 1,569 MB. GUI used memory: 54 MB. Current time: 8/19/19, 4:32:46 PM CLST
+// Elapsed time: 153 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Show IP Hierarchy"); // A (cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), valorastring : hex_to_ascii (lab_8.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), valorastring : hex_to_ascii (lab_8.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 56 MB. Current time: 8/19/19, 4:34:36 PM CLST
+// Elapsed time: 211 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab_8.sv", 1); // k (j, cp)
+// Elapsed time: 34 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "grid_c"); // l (aT, cp)
+selectCodeEditor("lab_8.sv", 483, 23); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 466, 30); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab_8.sv", 491, 185); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 521, 187); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_DELETE, (String) null); // B (f, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "grid_c"); // l (aT, cp)
+// [GUI Memory]: 109 MB (+228kb) [00:42:11]
+// Elapsed time: 129 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "templates.sv", 4); // k (j, cp)
+// Elapsed time: 18 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 7, false); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_07 : show_one_char (text_square.sv)]", 20, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 42 seconds
+selectCodeEditor("print.sv", 295, 268); // cl (w, cp)
+// Elapsed time: 77 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37); // B (D, cp)
+// Elapsed time: 59 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 37, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "uart_rx_ctrl.sv", 4); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 5); // k (j, cp)
+// [GUI Memory]: 116 MB (+1685kb) [00:48:43]
+// Elapsed time: 38 seconds
+selectCodeEditor("text_square.sv", 405, 79); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+selectCodeEditor("text_square.sv", 257, 129); // cl (w, cp)
+// Elapsed time: 121 seconds
+selectCodeEditor("text_square.sv", 233, 127); // cl (w, cp)
+selectCodeEditor("text_square.sv", 233, 127, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("text_square.sv", 243, 127); // cl (w, cp)
+selectCodeEditor("text_square.sv", 226, 143); // cl (w, cp)
+selectCodeEditor("text_square.sv", 245, 157); // cl (w, cp)
+selectCodeEditor("text_square.sv", 340, 167); // cl (w, cp)
+// Elapsed time: 90 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("print.sv", 28, 64); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 488, 207); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 63, 196); // cl (w, cp)
+selectCodeEditor("print.sv", 276, 254); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 5); // k (j, cp)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 4); // k (j, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("print.sv", 221, 109); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 336, 128); // cl (w, cp)
+selectCodeEditor("print.sv", 538, 74); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 524, 83); // cl (w, cp)
+selectCodeEditor("print.sv", 405, 94); // cl (w, cp)
+selectCodeEditor("print.sv", 378, 91); // cl (w, cp)
+// Elapsed time: 93 seconds
+selectCodeEditor("print.sv", 284, 111); // cl (w, cp)
+// Elapsed time: 86 seconds
+selectCodeEditor("print.sv", 188, 180); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 9 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Aug 19 15:56:31 2019] Launched synth_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 15:56:31 2019] Launched impl_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 108 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-448] named port connection 'pos_' does not exist for instance 'item6' of module 'grid_cursor' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:52]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\julio\Desktop\Universidad\TeamELO212\SESION8\SESION8.srcs\sources_1\new\lab_8.sv;-;;-;16;-;line;-;52;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 34 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'hex_to_ascii' [C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:103]. ]", 2, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\julio\Desktop\Universidad\TeamELO212\SESION8\SESION8.srcs\sources_1\new\lab_8.sv;-;;-;16;-;line;-;103;-;;-;16;-;"); // ah (Q, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 15:59:17 2019] Launched synth_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 15:59:17 2019] Launched impl_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 543ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 156 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aR, cp): FALSE
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cp)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0); // ah (Q, cp)
+// Elapsed time: 12 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net generic_bg[23] has multiple drivers: VGA_R_OBUF[3]_inst_i_60/O, and VGA_R_OBUF[3]_inst_i_61/O.. ]", 5); // ah (Q, cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 4); // k (j, cp)
+selectCodeEditor("print.sv", 2, 76, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("print.sv", 7, 76); // cl (w, cp)
+selectCodeEditor("print.sv", 406, 199); // cl (w, cp)
+selectCodeEditor("print.sv", 400, 212); // cl (w, cp)
+selectCodeEditor("print.sv", 106, 241); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 16:03:25 2019] Launched synth_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 16:03:25 2019] Launched impl_1... Run output will be captured here: C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 57 MB. Current time: 8/19/19, 5:04:37 PM CLST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1078ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1078 ms.
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 264 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// WARNING: HEventQueue.dispatchEvent() is taking  1180 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 118 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // X (q, cp)
+// Elapsed time: 150 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+// Elapsed time: 38 seconds
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+// Elapsed time: 43 seconds
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/julio/Downloads", 2); // ak (ag, JDialog)
+setFileChooser("C:/Users/julio/Downloads/lab_8.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/julio/Downloads/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 91 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 753 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 2); // k (j, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("grid_cursor.sv", 72, 72); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 155, 96); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 156, 92); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 171, 96); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 161, 92); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("grid_cursor.sv", 369, 178); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 374, 182); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 4); // k (j, cp)
+// Elapsed time: 285 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("PAResourceQtoS.RunRun_COMPLETED_IMPLEMENTATION_RUN_EXISTS_Cancel", "Cancel"); // JButton (C, I)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 58 MB. Current time: 8/19/19, 5:34:37 PM CLST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 1660 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 57 MB. Current time: 8/19/19, 6:04:37 PM CLST
+// Elapsed time: 375 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab_8.sv", 0); // k (j, cp)
+// Elapsed time: 24 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "grid_cur"); // l (aT, cp)
+// Elapsed time: 1000 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 410 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+// Elapsed time: 14 seconds
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "digito_in"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/digito_in.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/julio/Desktop/Universidad/TeamELO212/SESION8/SESION8.srcs/sources_1/new/digito_in.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 106 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 10); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, digito_in.sv]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, digito_in.sv]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("digito_in.sv", 218, 106); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("digito_in.sv", 203, 125); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 80, 76); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 204, 172); // cl (w, cp)
+// WARNING: HTimer (StateMonitor Timer) is taking 673ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 61 MB. Current time: 8/19/19, 6:34:38 PM CLST
+// Elapsed time: 311 seconds
+selectCodeEditor("digito_in.sv", 265, 125); // cl (w, cp)
+// Elapsed time: 284 seconds
+selectCodeEditor("digito_in.sv", 102, 130); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 181, 123); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 449, 126); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("digito_in.sv", 220, 128); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 220, 127); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 222, 128); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 267, 126); // cl (w, cp)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 491 seconds
+selectCodeEditor("digito_in.sv", 200, 143); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 62 MB. Current time: 8/19/19, 7:04:38 PM CLST
+// Elapsed time: 783 seconds
+selectCodeEditor("digito_in.sv", 105, 132); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 85, 197); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 220, 205); // cl (w, cp)
+// Elapsed time: 224 seconds
+selectCodeEditor("digito_in.sv", 224, 148); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 251, 196); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 240, 197); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 303, 199); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("digito_in.sv", 158, 153); // cl (w, cp)
+// Elapsed time: 237 seconds
+selectCodeEditor("digito_in.sv", 106, 146); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 195, 211); // cl (w, cp)
+// Elapsed time: 68 seconds
+selectCodeEditor("digito_in.sv", 275, 195); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 141, 79); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 196, 125); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 179, 163); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 197, 114); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 225, 127); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 215, 187); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 269, 260); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 168, 197); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 198); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 67, 159); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 243, 202); // cl (w, cp)
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 131, 99); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 325, 59); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 325, 59, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 126, 126); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 126, 126, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 314, 134); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("digito_in.sv", 239, 94); // cl (w, cp)
+// Elapsed time: 128 seconds
+selectCodeEditor("digito_in.sv", 360, 98); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 270, 87); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("digito_in.sv", 350, 172); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 187, 179); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 215, 178); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 250, 195); // cl (w, cp)
+// Elapsed time: 180 seconds
+selectCodeEditor("digito_in.sv", 247, 177); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 197, 176); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 197, 179); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 197, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 356, 181); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 566, 164); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("digito_in.sv", 292, 144); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 209, 129); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 270, 129); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("digito_in.sv", 500, 176); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("digito_in.sv", 194, 200); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("digito_in.sv", 203, 79); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 348, 76); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 246, 61); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("digito_in.sv", 474, 123); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 476, 111); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 1, 181); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 108, 147); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 226, 183); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("digito_in.sv", 361, 175); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("digito_in.sv", 532, 182); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 135, 135); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 135, 141); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("digito_in.sv", 171, 145); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("digito_in.sv", 368, 179); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 370, 178); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 287, 176); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 223, 180); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 384, 181); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("digito_in.sv", 501, 179); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 61 MB. Current time: 8/19/19, 7:34:38 PM CLST
+// Elapsed time: 122 seconds
+selectCodeEditor("digito_in.sv", 466, 263); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 277, 180); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 356, 188); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("digito_in.sv", 469, 143); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("digito_in.sv", 382, 144); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 188, 209); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 178, 178); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 150, 218); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digito_in (digito_in.sv)]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digito_in (digito_in.sv), banco_de_registros : xil_defaultlib.registro]", 11, false); // B (D, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("digito_in.sv", 36, 97); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 424, 182); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 109, 78); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 288, 215); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("digito_in.sv", 84, 195); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 216, 193); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("digito_in.sv", 32, 94); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("digito_in.sv", 172, 43); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 165, 57); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 299, 118); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 214, 57); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 280, 68); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 262, 127); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("digito_in.sv", 130, 192); // cl (w, cp)
+// Elapsed time: 171 seconds
+selectCodeEditor("digito_in.sv", 332, 263); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 250, 200); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("digito_in.sv", 165, 150); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 114, 267); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 100, 267); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 100, 267, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 185, 98); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 196, 104); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 230, 135); // cl (w, cp)
+// Elapsed time: 62 seconds
+selectCodeEditor("digito_in.sv", 516, 197); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("digito_in.sv", 34, 95); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 26, 96); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 407, 73); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 474, 89); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 367, 78); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 95); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 191, 98); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("digito_in.sv", 177, 92); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 383, 93); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("digito_in.sv", 277, 68); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 277, 62); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("digito_in.sv", 421, 63); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 490, 50); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 465, 130); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("digito_in.sv", 227, 121); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 221, 104); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("digito_in.sv", 161, 52); // cl (w, cp)
+// Elapsed time: 160 seconds
+selectCodeEditor("digito_in.sv", 267, 130); // cl (w, cp)
+// Elapsed time: 126 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), valorastring : hex_to_ascii (lab_8.sv)]", 8, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 3); // k (j, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("print.sv", 77, 198); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("print.sv", 294, 222); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "banco_de_registros.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "digito_in.sv", 5); // k (j, cp)
+selectCodeEditor("digito_in.sv", 169, 145); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("digito_in.sv", 245, 147); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("digito_in.sv", 214, 164); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("digito_in.sv", 175, 180); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 247, 158); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 221, 168); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 217, 166); // cl (w, cp)
+// Elapsed time: 136 seconds
+selectCodeEditor("digito_in.sv", 174, 211); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("digito_in.sv", 222, 229); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("digito_in.sv", 258, 76); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("digito_in.sv", 214, 142); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 87, 88); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("digito_in.sv", 52, 92); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 92, 248); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 103, 211); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 207); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 197); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("digito_in.sv", 102, 121); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 102, 75); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("digito_in.sv", 199, 10); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 159, 57); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 174, 223); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 240, 93); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 208, 245); // cl (w, cp)
+// Elapsed time: 93 seconds
+selectCodeEditor("digito_in.sv", 241, 158); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 102, 107); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("digito_in.sv", 170, 167); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 262, 168); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 196, 208); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 61 MB. Current time: 8/19/19, 8:04:39 PM CLST
+// Elapsed time: 116 seconds
+selectCodeEditor("digito_in.sv", 352, 115); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 230, 122); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 230, 117); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 192, 241); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 170, 226); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 154, 215); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 147, 201); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("digito_in.sv", 140, 119); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 138, 97); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 141, 113); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 131, 133); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 122, 109); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 123, 90); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 135, 130); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 118, 101); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 118, 89); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 118, 111); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("digito_in.sv", 143, 77); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 185, 182); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 185, 182, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 527, 128); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("digito_in.sv", 482, 108); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("digito_in.sv", 80, 142); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 79, 142, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 198, 141); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 251, 167); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 214, 215); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("digito_in.sv", 135, 46); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("digito_in.sv", 207, 253); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("digito_in.sv", 173, 180); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 211, 169); // cl (w, cp)
+// Elapsed time: 59 seconds
+selectCodeEditor("digito_in.sv", 339, 180); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 339, 180); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 139, 194); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 303, 194); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 192, 216); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 223, 207); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 91, 247); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 142, 208); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 69); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 68); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 64); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 106, 216); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("digito_in.sv", 247, 98); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("digito_in.sv", 110, 198); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 253, 209); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("digito_in.sv", 123, 178); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 133, 249); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 196, 195); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 103, 166); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 105, 58); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("digito_in.sv", 208, 110); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 249, 112); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 107, 162); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 246, 93); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 93, 190); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 98, 170); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 101, 158); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1447 ms. Increasing delay to 4341 ms.
+// Elapsed time: 454 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5136040 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 61 MB. Current time: 8/19/19, 9:48:23 PM CLST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5136904 ms. Increasing delay to 3000 ms.
+// Elapsed time: 5229 seconds
+selectCodeEditor("digito_in.sv", 358, 143); // cl (w, cp)
+// Elapsed time: 257 seconds
+selectCodeEditor("digito_in.sv", 320, 163); // cl (w, cp)
+// Elapsed time: 47 seconds
+selectCodeEditor("digito_in.sv", 126, 198); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 136, 200); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 103, 213); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 103, 62); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("digito_in.sv", 243, 91); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 205, 231); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 423, 189); // cl (w, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("digito_in.sv", 60, 161); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 62, 194); // cl (w, cp)
+// Elapsed time: 139 seconds
+selectCodeEditor("digito_in.sv", 210, 166); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 289, 195); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 373, 235); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("digito_in.sv", 273, 170); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 272, 168, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("digito_in.sv", 184, 164); // cl (w, cp)
+// Elapsed time: 125 seconds
+selectCodeEditor("digito_in.sv", 153, 210); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 134, 197); // cl (w, cp)
+// Elapsed time: 51 seconds
+selectCodeEditor("digito_in.sv", 245, 177); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("digito_in.sv", 107, 198); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 265, 211); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 163, 199); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("digito_in.sv", 118, 174); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("digito_in.sv", 319, 188); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 290, 177); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 315, 184); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 396, 180); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 255, 202); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("digito_in.sv", 104, 237); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 86, 240); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'c'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 141, 191); // cl (w, cp)
+typeControlKey((HResource) null, "digito_in.sv", 'v'); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 100, 62); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 104, 214); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("digito_in.sv", 508, 230); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 104, 161); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 508, 180); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("digito_in.sv", 199, 241); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 122, 220); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("digito_in.sv", 207, 196); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("digito_in.sv", 163, 198); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("digito_in.sv", 217, 188); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 130, 281); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 217, 153); // cl (w, cp)
+selectCodeEditor("digito_in.sv", 216, 148); // cl (w, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("digito_in.sv", 339, 146); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("digito_in.sv", 84, 148); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

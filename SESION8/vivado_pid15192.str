@@ -1,0 +1,1443 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 15192
+License: Customer
+
+Current time: 	Mon Aug 19 10:45:32 CLST 2019
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 22 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ThePhonkey
+User home directory: C:/Users/ThePhonkey
+User working directory: C:/Users/ThePhonkey/Desktop/ELO212/SESION8
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION8/vivado.log
+Vivado journal file location: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION8/vivado.jou
+Engine tmp dir: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION8/.Xil/Vivado-15192-HP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 565 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ThePhonkey\Desktop\ELO212\SESION8\SESION8.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 568 MB. GUI used memory: 46 MB. Current time: 8/19/19, 10:45:34 AM CLST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+108226kb) [00:00:15]
+// [Engine Memory]: 619 MB (+498039kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  4070 ms.
+// Tcl Message: open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 668.832 ; gain = 85.301 
+// Project name: SESION8; location: C:/Users/ThePhonkey/Desktop/ELO212/SESION8; part: xc7a100tcsg324-1
+// [Engine Memory]: 701 MB (+52555kb) [00:00:20]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 54 MB. Current time: 8/19/19, 10:46:09 AM CLST
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), staticscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), staticscreen : print (print.sv), ch_00 : show_one_char (text_square.sv)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9, true); // B (D, cp) - Node
+// [GUI Memory]: 111 MB (+525kb) [00:01:12]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("lab_8.sv", 142, 181); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 254 seconds
+selectCodeEditor("lab_8.sv", 736, 325); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 491, 137); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+// Elapsed time: 94 seconds
+selectCodeEditor("lab_8.sv", 272, 120); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("lab_8.sv", 331, 245); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 329, 240); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 350, 242); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 322, 392); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 449, 243); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 503, 242); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 526, 244); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 712, 260); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 504, 281); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 392, 308); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 740, 139); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 541, 179); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 738 MB (+3017kb) [00:09:21]
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 55 MB. Current time: 8/19/19, 10:54:54 AM CLST
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Aug 19 09:54:55 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 09:54:55 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 174 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1028 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3737 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,684 MB (+953111kb) [00:12:53]
+dismissDialog("Auto Connect"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,685 MB. GUI used memory: 60 MB. Current time: 8/19/19, 10:58:14 AM CLST
+selectCodeEditor("lab_8.sv", 424, 218); // cl (w, cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,707 MB. GUI used memory: 60 MB. Current time: 8/19/19, 10:59:19 AM CLST
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+// Elapsed time: 130 seconds
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // ax
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_05 : show_one_char (text_square.sv)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("print.sv", 152, 199); // cl (w, cp)
+selectCodeEditor("print.sv", 157, 203); // cl (w, cp)
+selectCodeEditor("print.sv", 150, 202); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("print.sv", 114, 161); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, show_one_line (text_square.sv)]", 38, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, show_one_line (text_square.sv)]", 38, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("text_square.sv", 350, 156); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("text_square.sv", 377, 139); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 15 seconds
+selectCodeEditor("lab_8.sv", 427, 328); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+// [GUI Memory]: 120 MB (+2888kb) [00:18:21]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("print.sv", 118, 359); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 37, 369); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("print.sv", 33, 317); // cl (w, cp)
+selectCodeEditor("print.sv", 26, 370); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("print.sv", 550, 376); // cl (w, cp)
+selectCodeEditor("print.sv", 278, 74); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 297, 349); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 286, 99); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 323, 369); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 12, 123); // cl (w, cp)
+selectCodeEditor("print.sv", 5, 116); // cl (w, cp)
+selectCodeEditor("print.sv", 1, 115); // cl (w, cp)
+selectCodeEditor("print.sv", 354, 98); // cl (w, cp)
+selectCodeEditor("print.sv", 232, 328); // cl (w, cp)
+selectCodeEditor("print.sv", 313, 348); // cl (w, cp)
+selectCodeEditor("print.sv", 322, 369); // cl (w, cp)
+selectCodeEditor("print.sv", 383, 262); // cl (w, cp)
+selectCodeEditor("print.sv", 381, 284); // cl (w, cp)
+selectCodeEditor("print.sv", 145, 158); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 332, 244); // cl (w, cp)
+selectCodeEditor("print.sv", 276, 221); // cl (w, cp)
+selectCodeEditor("print.sv", 249, 32); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 334, 181); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 289, 115); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 332, 161); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 395, 180); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("print.sv", 63, 243); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("print.sv", 373, 169); // cl (w, cp)
+selectCodeEditor("print.sv", 430, 353); // cl (w, cp)
+selectCodeEditor("print.sv", 362, 393); // cl (w, cp)
+selectCodeEditor("print.sv", 27, 145); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 10:06:56 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 10:06:56 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 167 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// TclEventType: RUN_COMPLETED
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "banco_de_registros"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+// Elapsed time: 50 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 69 seconds
+dismissDialog("Add Sources"); // c (cp)
+// ah (cp): Bitstream Generation Completed: addNotify
+// Tcl Message: close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/banco_de_registros.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/banco_de_registros.sv 
+// [GUI Memory]: 126 MB (+129kb) [00:25:34]
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab_8.sv", 292, 159); // cl (w, cp)
+// RDIResource.RDIViews_PROPERTIES: Hardware Device Properties: close view
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_11 : show_one_char (text_square.sv)]", 24, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 67 seconds
+selectCodeEditor("print.sv", 522, 136); // cl (w, cp)
+selectCodeEditor("print.sv", 649, 138); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 53 seconds
+selectCodeEditor("print.sv", 378, 375); // cl (w, cp)
+selectCodeEditor("print.sv", 48, 68); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 412, 318); // cl (w, cp)
+selectCodeEditor("print.sv", 339, 243); // cl (w, cp)
+selectCodeEditor("print.sv", 385, 295); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 105, 230); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 78, 266); // cl (w, cp)
+selectCodeEditor("print.sv", 327, 264); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("print.sv", 232, 224); // cl (w, cp)
+selectCodeEditor("print.sv", 458, 288); // cl (w, cp)
+selectCodeEditor("print.sv", 360, 246); // cl (w, cp)
+selectCodeEditor("print.sv", 379, 246); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("print.sv", 398, 280); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 331, 391); // cl (w, cp)
+selectCodeEditor("print.sv", 321, 368); // cl (w, cp)
+selectCodeEditor("print.sv", 80, 264); // cl (w, cp)
+selectCodeEditor("print.sv", 486, 368); // cl (w, cp)
+selectCodeEditor("print.sv", 222, 344); // cl (w, cp)
+selectCodeEditor("print.sv", 234, 349); // cl (w, cp)
+selectCodeEditor("print.sv", 370, 311); // cl (w, cp)
+selectCodeEditor("print.sv", 145, 306); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("print.sv", 402, 139); // cl (w, cp)
+selectCodeEditor("print.sv", 408, 129); // cl (w, cp)
+selectCodeEditor("print.sv", 387, 114); // cl (w, cp)
+selectCodeEditor("print.sv", 379, 179); // cl (w, cp)
+selectCodeEditor("print.sv", 379, 170); // cl (w, cp)
+selectCodeEditor("print.sv", 379, 170); // cl (w, cp)
+selectCodeEditor("print.sv", 379, 170); // cl (w, cp)
+selectCodeEditor("print.sv", 349, 102); // cl (w, cp)
+selectCodeEditor("print.sv", 366, 88); // cl (w, cp)
+selectCodeEditor("print.sv", 366, 89); // cl (w, cp)
+selectCodeEditor("print.sv", 365, 130); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 38, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 38, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("banco_de_registros.sv", 111, 387); // cl (w, cp)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "banco_de_registros.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 134 MB (+1662kb) [00:32:02]
+// Elapsed time: 27 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "ALU"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/ALU.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/ALU.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.sv)]", 38, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.sv)]", 38, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ALU.sv", 91, 384); // cl (w, cp)
+typeControlKey((HResource) null, "ALU.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 162 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 10:21:06 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 10:21:06 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("lab_8.sv", 252, 299); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 15 seconds
+selectCodeEditor("lab_8.sv", 71, 46); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 87, 114); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 101, 49); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 189, 184); // cl (w, cp)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("lab_8.sv", 35, 286); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 582, 178); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("lab_8.sv", 382, 178); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab_8.sv", 384, 261, false, true, false, false, false); // cl (w, cp) - Control Key
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 34 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 1,729 MB. GUI used memory: 73 MB. Current time: 8/19/19, 11:24:15 AM CLST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 46 seconds
+selectCodeEditor("lab_8.sv", 287, 244); // cl (w, cp)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0]' 
+selectCodeEditor("lab_8.sv", 256, 222); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 349, 219); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 266, 214); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab_8.sv", 260, 238); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2, "Out-of-Context Module Runs", 0, true); // ax (Q, cp) - Node
+selectCodeEditor("lab_8.sv", 127, 175); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab_8.sv", 88, 176); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 321, 200); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab_8.sv", 78, 197); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 2, 203); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab_8.sv", 225, 181); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 224, 195); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("lab_8.sv", 1039, 200); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 240, 202); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("lab_8.sv", 1046, 223); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab_8.sv", 237, 221); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("lab_8.sv", 1046, 243); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("lab_8.sv", 378, 242); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 1080, 285); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("lab_8.sv", 841, 244); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 867, 243); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 1082, 286); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 1077, 269); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("lab_8.sv", 287, 331); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registro (banco_de_registros.sv)]", 39, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registro (banco_de_registros.sv)]", 39, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("lab_8.sv", 279, 329); // cl (w, cp)
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registro (banco_de_registros.sv)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registro (banco_de_registros.sv)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("banco_de_registros.sv", 212, 56); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, banco_de_registros (banco_de_registros.sv)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 27 seconds
+selectCodeEditor("lab_8.sv", 941, 329); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 985, 326); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 39 seconds
+selectCodeEditor("lab_8.sv", 82, 328); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 47 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_11 : show_one_char (text_square.sv)]", 27, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("print.sv", 683, 204); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("print.sv", 649, 91); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("print.sv", 655, 111); // cl (w, cp)
+selectCodeEditor("print.sv", 646, 112); // cl (w, cp)
+selectCodeEditor("print.sv", 227, 53); // cl (w, cp)
+selectCodeEditor("print.sv", 368, 100); // cl (w, cp)
+selectCodeEditor("print.sv", 520, 193, false, true, false, false, false); // cl (w, cp) - Control Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 10:37:45 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 10:37:45 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 50 seconds
+selectCodeEditor("lab_8.sv", 931, 301); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 48 seconds
+selectCodeEditor("print.sv", 382, 306); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 954, 307); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 1); // k (j, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("print.sv", 696, 90); // cl (w, cp)
+selectCodeEditor("print.sv", 658, 121); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("print.sv", 657, 11); // cl (w, cp)
+selectCodeEditor("print.sv", 651, 249); // cl (w, cp)
+selectCodeEditor("print.sv", 655, 265); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab_8.sv", 0); // k (j, cp)
+// [GUI Memory]: 141 MB (+931kb) [00:57:40]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 2); // k (j, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("print.sv", 617, 311); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, templates (templates.sv)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, templates (templates.sv)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hello_world_text_square (text_square.sv)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hello_world_text_square (text_square.sv)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hello_world_text_square (text_square.sv)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("text_square.sv", 267, 35); // cl (w, cp)
+// Elapsed time: 43 seconds
+selectCodeEditor("text_square.sv", 265, 51); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "print.sv", 2); // k (j, cp)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab_8.sv", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab_8.sv", 582, 255); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("lab_8.sv", 231, 153); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 242, 135); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("lab_8.sv", 588, 185); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab_8.sv", 921, 201); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 637, 239); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_12 : show_one_char (text_square.sv)]", 28, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 24 seconds
+selectCodeEditor("print.sv", 144, 221); // cl (w, cp)
+// Elapsed time: 108 seconds
+selectCodeEditor("print.sv", 105, 184); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("print.sv", 168, 179); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 249, 181); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 183, 193); // cl (w, cp)
+selectCodeEditor("print.sv", 261, 184); // cl (w, cp)
+selectCodeEditor("print.sv", 170, 224); // cl (w, cp)
+selectCodeEditor("print.sv", 354, 260); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("print.sv", 105, 181); // cl (w, cp)
+selectCodeEditor("print.sv", 217, 229); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), bancoA : banco_de_registros (banco_de_registros.sv)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,729 MB. GUI used memory: 77 MB. Current time: 8/19/19, 11:54:20 AM CLST
+// Elapsed time: 209 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "uart_rx_"); // Y (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "uart_rx_ctrl"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/uart_rx_ctrl.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/uart_rx_ctrl.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("uart_rx_ctrl.sv", 116, 385); // cl (w, cp)
+typeControlKey((HResource) null, "uart_rx_ctrl.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("lab_8.sv", 41, 282); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 41, 203); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 510, 243); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 536, 299); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("lab_8.sv", 79, 306); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 17, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_rx_ctrl (uart_rx_ctrl.sv)]", 17, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("uart_rx_ctrl.sv", 374, 116); // cl (w, cp)
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 80 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("lab_8.sv", 44, 286); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_08 : show_one_char (text_square.sv)]", 24, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 41 seconds
+selectCodeEditor("print.sv", 116, 226); // cl (w, cp)
+selectCodeEditor("print.sv", 203, 229); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 36 seconds
+selectCodeEditor("grid_cursor.sv", 64, 203); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "grid_cursor.sv", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 48 seconds
+selectCodeEditor("lab_8.sv", 59, 32); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("lab_8.sv", 880, 180); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+// Elapsed time: 61 seconds
+selectCodeEditor("lab_8.sv", 187, 32); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 281, 120); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab_8.sv", 237, 124); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 292, 138); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 212, 140); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 209, 35); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("lab_8.sv", 459, 248); // cl (w, cp)
+// Elapsed time: 55 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), m_hw : activetext (text_square.sv)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), m_hw : activetext (text_square.sv)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 72 seconds
+selectCodeEditor("text_square.sv", 182, 178); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'c'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 193, 177); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 107, 181); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("text_square.sv", 177, 197); // cl (w, cp)
+selectCodeEditor("text_square.sv", 167, 225); // cl (w, cp)
+selectCodeEditor("text_square.sv", 298, 264); // cl (w, cp)
+selectCodeEditor("text_square.sv", 190, 262); // cl (w, cp)
+selectCodeEditor("text_square.sv", 348, 262); // cl (w, cp)
+selectCodeEditor("text_square.sv", 342, 263); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("text_square.sv", 249, 270); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("text_square.sv", 194, 263); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'c'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 340, 283); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 411, 305); // cl (w, cp)
+selectCodeEditor("text_square.sv", 314, 309); // cl (w, cp)
+selectCodeEditor("text_square.sv", 311, 307); // cl (w, cp)
+selectCodeEditor("text_square.sv", 300, 305); // cl (w, cp)
+selectCodeEditor("text_square.sv", 312, 307); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'c'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 251, 288); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 251, 270); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 349, 286); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'c'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 413, 306); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'v'); // cl (w, cp)
+selectCodeEditor("text_square.sv", 232, 306); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("text_square.sv", 348, 288); // cl (w, cp)
+selectCodeEditor("text_square.sv", 351, 324); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("text_square.sv", 366, 373); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("text_square.sv", 267, 142); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_04 : show_one_char (text_square.sv)]", 20, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), m_hw : activetext (text_square.sv)]", 40, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), m_hw : activetext (text_square.sv)]", 40, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("text_square.sv", 65, 220); // cl (w, cp)
+typeControlKey((HResource) null, "text_square.sv", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 35 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cp)
+selectCodeEditor("print.sv", 195, 196); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("lab_8.sv", 170, 136); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("lab_8.sv", 252, 139); // cl (w, cp)
+// Elapsed time: 63 seconds
+selectCodeEditor("lab_8.sv", 578, 244); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("lab_8.sv", 612, 252); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 641, 228); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 608, 247); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_06 : show_one_char (text_square.sv)]", 20, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("print.sv", 409, 242); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 330, 179); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 529, 330); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 538, 326); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("print.sv", 340, 202); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'c'); // cl (w, cp)
+selectCodeEditor("print.sv", 555, 348); // cl (w, cp)
+typeControlKey((HResource) null, "print.sv", 'v'); // cl (w, cp)
+selectCodeEditor("print.sv", 546, 348); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("print.sv", 214, 246); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("print.sv", 403, 223); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Aug 19 11:19:45 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 11:19:45 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 189 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,729 MB. GUI used memory: 80 MB. Current time: 8/19/19, 12:24:20 PM CLST
+// Elapsed time: 84 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 13); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 10); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (D, cp)
+// A (cp): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Show IP Hierarchy"); // A (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_12 : show_one_char (text_square.sv)]", 26, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 28 seconds
+selectCodeEditor("print.sv", 285, 185); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 64 seconds
+selectCodeEditor("lab_8.sv", 172, 225); // cl (w, cp)
+// Elapsed time: 74 seconds
+selectCodeEditor("lab_8.sv", 393, 219); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("lab_8.sv", 292, 281); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("lab_8.sv", 253, 228); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 303, 222); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 339, 222); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 516, 239); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 448, 221); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 729, 244); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab_8.sv", 141, 268); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 10); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 13); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 38, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 38, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 38, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 38, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("text_square.sv", 379, 283); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectCodeEditor("text_square.sv", 322, 183); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("text_square.sv", 418, 181); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 11:32:53 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 11:32:53 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 106 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net item6/SW_IBUF[0] has multiple drivers: item6/VGA_R_OBUF[3]_inst_i_260/O, and SW_IBUF[0]_inst/O.. ]", 75, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 78, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 78, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 78, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin out0[1] with 1st driver pin 'i_0/hola/i_64/Z' [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:108]. ]", 29, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ThePhonkey\Desktop\ELO212\SESION8\SESION8.srcs\sources_1\new\lab_8.sv;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6858] multi-driven net out0[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:108]. ]", 30, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ThePhonkey\Desktop\ELO212\SESION8\SESION8.srcs\sources_1\new\lab_8.sv;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 45 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin out0[1] with 1st driver pin 'i_0/hola/i_64/Z' [C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/new/lab_8.sv:108]. ]", 29, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ThePhonkey\Desktop\ELO212\SESION8\SESION8.srcs\sources_1\new\lab_8.sv;-;;-;16;-;line;-;108;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_24 : activetext (text_square.sv)]", 38); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), item6 : grid_cursor (grid_cursor.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("grid_cursor.sv", 412, 307); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 403, 300); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("grid_cursor.sv", 405, 308); // cl (w, cp)
+typeControlKey((HResource) null, "grid_cursor.sv", 'c'); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 472, 305); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 465, 302); // cl (w, cp)
+typeControlKey((HResource) null, "grid_cursor.sv", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("lab_8.sv", 263, 266); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 55, 11, false, true, false, false, false); // cl (w, cp) - Control Key
+// Elapsed time: 13 seconds
+selectCodeEditor("lab_8.sv", 108, 243); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab_8.sv", 530, 120); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab_8.sv", 269, 348); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 207, 262); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 208, 264, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("lab_8.sv", 36, 265, false, true, false, false, false); // cl (w, cp) - Control Key
+// Elapsed time: 17 seconds
+selectCodeEditor("lab_8.sv", 247, 181); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 244, 197); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 90, 184); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 241, 206); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 240, 224); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 241, 238); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 242, 262); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 163, 266, false, true, false, false, false); // cl (w, cp) - Control Key
+// Elapsed time: 12 seconds
+selectCodeEditor("lab_8.sv", 268, 205); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 270, 201); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 268, 222); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 267, 248); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 270, 267); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 246, 182); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 150 MB (+1221kb) [01:55:34]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 11:40:55 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 11:40:55 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+// Elapsed time: 42 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv)]", 9); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("print.sv", 657, 56); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 128 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 139 seconds
+selectCodeEditor("lab_8.sv", 353, 329); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab_8.sv", 279, 325); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 153, 346); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 137, 374); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 281, 347); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 285, 347); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "templates.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text_square.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "grid_cursor.sv", 7); // k (j, cp)
+selectCodeEditor("grid_cursor.sv", 732, 175); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 461, 159); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 455, 165); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 472, 161, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("grid_cursor.sv", 529, 156); // cl (w, cp)
+selectCodeEditor("grid_cursor.sv", 492, 163, false, true, false, false, false); // cl (w, cp) - Control Key
+typeControlKey((HResource) null, "grid_cursor.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab_8.sv", 0); // k (j, cp)
+selectCodeEditor("lab_8.sv", 355, 327); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 0, 368); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 277, 330); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 270, 265); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 270, 281); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 268, 307); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab_8.sv", 355, 330); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 193, 327); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 136, 309); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'c'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 137, 328); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 132, 355); // cl (w, cp)
+typeControlKey((HResource) null, "lab_8.sv", 'v'); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 271, 328); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 381, 322); // cl (w, cp)
+selectCodeEditor("lab_8.sv", 291, 352); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), hola : hex_to_ascii (lab_8.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), hola : hex_to_ascii (lab_8.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("lab_8.sv", 190, 200); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 43 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv)]", 12); // B (D, cp)
+// Elapsed time: 35 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_19 : show_one_char (text_square.sv)]", 32); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_19 : show_one_char (text_square.sv), m_ch : characters (characters.sv)]", 33, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab_8 (lab_8.sv), calculator_screen : calculator_screen (lab_8.sv), onscreen : print (print.sv), ch_19 : show_one_char (text_square.sv), m_ch : characters (characters.sv)]", 33, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// Tcl Message: [Mon Aug 19 11:51:37 2019] Launched synth_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/synth_1/runme.log [Mon Aug 19 11:51:37 2019] Launched impl_1... Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/runme.log 
+// bx (cp):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,729 MB. GUI used memory: 89 MB. Current time: 8/19/19, 12:54:20 PM CLST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 181 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO212/SESION8/SESION8.runs/impl_1/lab_8.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
